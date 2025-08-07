@@ -1,12 +1,329 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Joby Homestay Kadamakudy</title>
-  </head>
-  <body>
-    <h1>Welcome to Joby Homestay Kadamakudy</h1>
-    <p>Your website is now live on GitHub Pages!</p>
-    <p>More content coming soon...</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joby Homestay Kadamakudy</title>
+  <style>
+    /* Reset and base styles */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      min-height: 100vh;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Background slideshow using ::before */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: -2;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      animation: backgroundFade 24s infinite;
+      background-image: url('photos/background1.jpg');
+    }
+
+    /* Transparent dark overlay for readability */
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    /* Background fade animation */
+    @keyframes backgroundFade {
+      0% {
+        background-image: url('photos/background1.jpg');
+      }
+      25% {
+        background-image: url('photos/background2.jpg');
+      }
+      50% {
+        background-image: url('photos/background3.jpg');
+      }
+      75% {
+        background-image: url('photos/background4.jpg');
+      }
+      100% {
+        background-image: url('photos/background1.jpg');
+      }
+    }
+
+    a {
+      color: #0288d1;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header styling */
+    header {
+      background: rgba(0, 121, 107, 0.9);
+      color: white;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      user-select: none;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 1.2px;
+    }
+    header p {
+      margin: 0.2rem 0 0;
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    /* Main content container */
+    main {
+      max-width: 900px;
+      margin: 2rem auto 3rem;
+      padding: 1rem 1.5rem;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-bottom: 4px solid #00796b;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      color: #004d40;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    p {
+      font-size: 1rem;
+      margin-top: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    .highlight {
+      color: #d32f2f;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    /* Details table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.8rem;
+      font-size: 1rem;
+    }
+    table td {
+      padding: 0.5rem 0.8rem;
+      vertical-align: top;
+      border-bottom: 1px solid #ccc;
+    }
+    table tr:nth-child(even) {
+      background: #e0f2f1;
+    }
+
+    /* WhatsApp buttons */
+    .btn-whatsapp {
+      display: inline-block;
+      margin: 0.8rem 1rem 0.5rem 0;
+      padding: 0.8rem 1.4rem;
+      background-color: #25d366;
+      color: white;
+      border-radius: 6px;
+      font-weight: 700;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+      font-size: 1rem;
+    }
+    .btn-whatsapp:hover, .btn-whatsapp:focus {
+      background-color: #1ebe57;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+      text-decoration: none;
+      outline: none;
+    }
+
+    /* Gallery grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+      object-fit: cover;
+      height: 120px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    /* Reviews styling */
+    #reviews {
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 12px;
+      padding: 1.8rem 2.5rem;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+    .review {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-left: 2rem;
+      border-left: 5px solid #00796b;
+      color: #222;
+    }
+    .review p:first-child::before {
+      content: "“";
+      font-size: 3rem;
+      position: absolute;
+      left: 0;
+      top: -0.4rem;
+      color: #00796b;
+      font-weight: 700;
+      line-height: 0.8;
+    }
+    .review strong {
+      font-style: normal;
+      color: #004d40;
+      display: block;
+      margin-top: 0.5rem;
+      font-weight: 700;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #ccc;
+      background: rgba(0,0,0,0.5);
+      margin-top: 1rem;
+      border-radius: 0 0 12px 12px;
+      user-select: none;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      main {
+        margin: 1rem;
+        padding: 1rem 1.2rem;
+      }
+      .gallery img {
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Joby Homestay Kadamakudy</h1>
+    <p>100 meters from the beautiful Backwaters | PS5 Racing Cockpit Available!</p>
+  </header>
+
+  <main>
+    <section id="welcome">
+      <h2>Welcome to Joby Homestay</h2>
+      <p>
+        Enjoy a peaceful stay just steps from Kadamakudy’s stunning backwaters.  
+        Relax with modern amenities or challenge your friends in our PlayStation 5 racing cockpit!
+      </p>
+      <p class="highlight">₹500+ discount when you book directly via WhatsApp instead of Airbnb.</p>
+    </section>
+
+    <section id="details">
+      <h2>Details at a Glance</h2>
+      <table>
+        <tr>
+          <td><strong>Address:</strong></td>
+          <td>Manavalan House, Kadamakudy, Ernakulam District, Kerala 682027</td>
+        </tr>
+        <tr>
+          <td><strong>Google Maps:</strong></td>
+          <td><a href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIHCAIQABjvBTIKCAMQABiABBiiBNIBCTgyODlqMGoxNagCCLACAfEFh05HA3w57o3xBYdORwN8Oe6N&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KaktDpR2EQg7MU_HKlF26j7X&daddr=Manavalan+street,+Valiya+Kadamakudy,+Ernakulam,+Kochi,+Kerala+683517" target="_blank" rel="noopener noreferrer">Open Location</a></td>
+        </tr>
+        <tr>
+          <td><strong>Phone:</strong></td>
+          <td>7012289998</td>
+        </tr>
+        <tr>
+          <td><strong>Email:</strong></td>
+          <td><a href="mailto:jexonjoby94@gmail.com">jexonjoby94@gmail.com</a></td>
+        </tr>
+        <tr>
+          <td><strong>Check-in / Check-out:</strong></td>
+          <td>Check-in: 1 PM &nbsp; | &nbsp; Check-out: 11 AM</td>
+        </tr>
+        <tr>
+          <td><strong>WhatsApp Booking:</strong></td>
+          <td><span class="highlight">₹500+ Discount</span> when booking directly via WhatsApp.</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <p>Click the images to enlarge and see the beauty of Joby Homestay.</p>
+      <div class="gallery">
+        <img src="photos/photo1.jpg" alt="Homestay Photo 1" />
+        <img src="photos/photo2.jpg" alt="Homestay Photo 2" />
+        <img src="photos/photo3.jpg" alt="Homestay Photo 3" />
+        <img src="photos/photo4.jpg" alt="Homestay Photo 4" />
+        <!-- Add more photos if you want -->
+      </div>
+    </section>
+
+    <section id="reviews">
+      <h2>Customer Reviews</h2>
+      <div class="review">
+        <p>Wonderful stay! The location is perfect, and the PS5 setup was a great bonus.</p>
+        <strong>- Anjali K., March 2025</strong>
+      </div>
+      <div class="review">
+        <p>Very clean homestay close to the backwaters. Great hospitality and affordable rates.</p>
+        <strong>- Rahul M., April 2025</strong>
+      </div>
+      <div class="review">
+        <p>Highly recommend Joby Homestay for a relaxed and fun getaway with family.</p>
+        <strong>- Sneha P., May 2025</strong>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us / Book via WhatsApp</h2>
+      <p>Click the buttons below to chat and book instantly on WhatsApp:</p>
+      <a class="btn-whatsapp" href="https://wa.me/917012289998" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp 7012289998">
+        📱 WhatsApp: 7012289998
+      </a>
+      <a class="btn-whatsapp" href="https://wa.me/919074462526" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp 9074462526">
+        📱 WhatsApp: 9074462526
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Joby Homestay Kadamakudy. All rights reserved.</small>
+  </footer>
+</body>
 </html>
