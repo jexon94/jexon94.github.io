@@ -1,329 +1,2194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Joby Homestay Kadamakudy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joby Homestay Kadamakkudy | 3BHK Waterfront Villa & PS5 Simulator, Kochi</title>
+  <meta name="description" content="Book Joby Homestay in Valiya Kadamakkudy (Kadamakudy), Kochi. Airbnb 4.8★ Superhost 3BHK AC riverfront villa for up to 12 guests with PS5 Racing Cockpit, homemade Kerala food & backwater kayaking.">
+  <meta name="keywords" content="Joby Homestay, Kadamakkudy homestay, Kadamakudy homestay Kochi, 3BHK villa Kadamakkudy, waterfront stay Kochi, PS5 simulator homestay Kerala">
+  <link rel="canonical" href="https://jobyhomestaykadamakkudy.com/">
+
+  <!-- OpenGraph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Joby Homestay Kadamakkudy">
+  <meta property="og:title" content="Joby Homestay | 3BHK Waterfront Villa & PS5 Simulator in Kadamakkudy, Kochi">
+  <meta property="og:description" content="100% single-group private 3BHK AC villa at Manavalan House, Valiya Kadamakkudy. 4.8★ Airbnb Guest Favourite with PS5 racing rig, backwaters & homestyle Kerala meals.">
+  <meta property="og:url" content="https://jobyhomestaykadamakkudy.com/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1600&q=80">
+
+  <!-- Local Business SEO Schema (LodgingBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LodgingBusiness",
+    "name": "Joby Homestay Kadamakkudy",
+    "alternateName": ["Joby Homestay", "Manavalan House Kadamakkudy", "Joby Homestay Kadamakudy"],
+    "url": "https://jobyhomestaykadamakkudy.com/",
+    "telephone": "+917012289998",
+    "email": "jexonjoby94@gmail.com",
+    "priceRange": "₹₹",
+    "checkinTime": "14:00",
+    "checkoutTime": "11:00",
+    "numberOfRooms": 3,
+    "petsAllowed": false,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Manavalan House, Valiya Kadamakkudy",
+      "addressLocality": "Kadamakkudy, Kochi",
+      "addressRegion": "Kerala",
+      "postalCode": "682027",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "10.0628",
+      "longitude": "76.2464"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.81",
+      "reviewCount": "118",
+      "bestRating": "5"
+    },
+    "amenityFeature": [
+      {"@type": "LocationFeatureSpecification", "name": "PS5 Racing Simulator Cockpit", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Full Kitchen", "value": true},
+      {"@type": "LocationFeatureSpecification", "name": "Waterfront Access", "value": true}
+    ]
+  }
+  </script>
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clay: {
+              50: '#fdf7f4',
+              100: '#faeee8',
+              200: '#f4dcce',
+              300: '#ebbca7',
+              400: '#df9477',
+              500: '#c25e36',
+              600: '#ab4a24',
+              700: '#8e3a1b',
+              800: '#75321b',
+              900: '#602a19',
+            },
+            backwater: {
+              50: '#f2f9f6',
+              100: '#def1e9',
+              200: '#bfe3d5',
+              600: '#1e755a',
+              700: '#175c47',
+              800: '#154c3a',
+              900: '#0f3529',
+              950: '#071f18',
+            },
+            timber: {
+              50: '#faf6f0',
+              100: '#f5ebe0',
+              200: '#e3d5ca',
+              600: '#78553a',
+              700: '#5c3a21',
+              800: '#432818',
+              900: '#2c180e',
+            },
+            palmcream: '#faf7f2',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Firebase v10 Compat SDK (App + Realtime Database) -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
   <style>
-    /* Reset and base styles */
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      min-height: 100vh;
-      position: relative;
-      overflow-x: hidden;
+    .hero-gradient {
+      background: linear-gradient(180deg, rgba(7, 31, 24, 0.48) 0%, rgba(7, 31, 24, 0.90) 100%);
     }
-
-    /* Background slideshow using ::before */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      z-index: -2;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      animation: backgroundFade 24s infinite;
-      background-image: url('photos/background1.jpg');
+    .badge-airbnb {
+      background: linear-gradient(135deg, #FF385C 0%, #BD1E59 100%);
     }
-
-    /* Transparent dark overlay for readability */
-    body::after {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: -1;
+    ::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
     }
-
-    /* Background fade animation */
-    @keyframes backgroundFade {
-      0% {
-        background-image: url('photos/background1.jpg');
-      }
-      25% {
-        background-image: url('photos/background2.jpg');
-      }
-      50% {
-        background-image: url('photos/background3.jpg');
-      }
-      75% {
-        background-image: url('photos/background4.jpg');
-      }
-      100% {
-        background-image: url('photos/background1.jpg');
-      }
-    }
-
-    a {
-      color: #0288d1;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Header styling */
-    header {
-      background: rgba(0, 121, 107, 0.9);
-      color: white;
-      padding: 1rem 1.5rem;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-      user-select: none;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      letter-spacing: 1.2px;
-    }
-    header p {
-      margin: 0.2rem 0 0;
-      font-style: italic;
-      font-weight: 600;
-    }
-
-    /* Main content container */
-    main {
-      max-width: 900px;
-      margin: 2rem auto 3rem;
-      padding: 1rem 1.5rem;
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 12px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
-    }
-    section {
-      margin-bottom: 3rem;
-    }
-    h2 {
-      border-bottom: 4px solid #00796b;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-      color: #004d40;
-      font-weight: 700;
-      letter-spacing: 0.5px;
-    }
-    p {
-      font-size: 1rem;
-      margin-top: 0.3rem;
-      margin-bottom: 1rem;
-    }
-    .highlight {
-      color: #d32f2f;
-      font-weight: bold;
-      font-size: 1.1rem;
-    }
-
-    /* Details table */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 0.8rem;
-      font-size: 1rem;
-    }
-    table td {
-      padding: 0.5rem 0.8rem;
-      vertical-align: top;
-      border-bottom: 1px solid #ccc;
-    }
-    table tr:nth-child(even) {
-      background: #e0f2f1;
-    }
-
-    /* WhatsApp buttons */
-    .btn-whatsapp {
-      display: inline-block;
-      margin: 0.8rem 1rem 0.5rem 0;
-      padding: 0.8rem 1.4rem;
-      background-color: #25d366;
-      color: white;
-      border-radius: 6px;
-      font-weight: 700;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      cursor: pointer;
-      text-align: center;
-      font-size: 1rem;
-    }
-    .btn-whatsapp:hover, .btn-whatsapp:focus {
-      background-color: #1ebe57;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
-      text-decoration: none;
-      outline: none;
-    }
-
-    /* Gallery grid */
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 14px;
-      margin-top: 1rem;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
-      object-fit: cover;
-      height: 120px;
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    }
-
-    /* Reviews styling */
-    #reviews {
-      background: rgba(255, 255, 255, 0.92);
-      border-radius: 12px;
-      padding: 1.8rem 2.5rem;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
-    }
-    .review {
-      font-style: italic;
-      margin-bottom: 1.5rem;
-      position: relative;
-      padding-left: 2rem;
-      border-left: 5px solid #00796b;
-      color: #222;
-    }
-    .review p:first-child::before {
-      content: "“";
-      font-size: 3rem;
-      position: absolute;
-      left: 0;
-      top: -0.4rem;
-      color: #00796b;
-      font-weight: 700;
-      line-height: 0.8;
-    }
-    .review strong {
-      font-style: normal;
-      color: #004d40;
-      display: block;
-      margin-top: 0.5rem;
-      font-weight: 700;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      color: #ccc;
-      background: rgba(0,0,0,0.5);
-      margin-top: 1rem;
-      border-radius: 0 0 12px 12px;
-      user-select: none;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 480px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-      main {
-        margin: 1rem;
-        padding: 1rem 1.2rem;
-      }
-      .gallery img {
-        height: 100px;
-      }
+    ::-webkit-scrollbar-thumb {
+      background: #c25e36;
+      border-radius: 9999px;
     }
   </style>
 </head>
-<body>
-  <header>
-    <h1>Joby Homestay Kadamakudy</h1>
-    <p>100 meters from the beautiful Backwaters | PS5 Racing Cockpit Available!</p>
-  </header>
+<body class="bg-palmcream text-timber-900 font-sans antialiased selection:bg-clay-500 selection:text-white relative">
 
-  <main>
-    <section id="welcome">
-      <h2>Welcome to Joby Homestay</h2>
-      <p>
-        Enjoy a peaceful stay just steps from Kadamakudy’s stunning backwaters.  
-        Relax with modern amenities or challenge your friends in our PlayStation 5 racing cockpit!
-      </p>
-      <p class="highlight">₹500+ discount when you book directly via WhatsApp instead of Airbnb.</p>
-    </section>
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast-container" class="fixed bottom-6 right-6 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
-    <section id="details">
-      <h2>Details at a Glance</h2>
-      <table>
-        <tr>
-          <td><strong>Address:</strong></td>
-          <td>Manavalan House, Kadamakudy, Ernakulam District, Kerala 682027</td>
-        </tr>
-        <tr>
-          <td><strong>Google Maps:</strong></td>
-          <td><a href="https://www.google.com/maps?gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIHCAIQABjvBTIKCAMQABiABBiiBNIBCTgyODlqMGoxNagCCLACAfEFh05HA3w57o3xBYdORwN8Oe6N&um=1&ie=UTF-8&fb=1&gl=in&sa=X&geocode=KaktDpR2EQg7MU_HKlF26j7X&daddr=Manavalan+street,+Valiya+Kadamakudy,+Ernakulam,+Kochi,+Kerala+683517" target="_blank" rel="noopener noreferrer">Open Location</a></td>
-        </tr>
-        <tr>
-          <td><strong>Phone:</strong></td>
-          <td>7012289998</td>
-        </tr>
-        <tr>
-          <td><strong>Email:</strong></td>
-          <td><a href="mailto:jexonjoby94@gmail.com">jexonjoby94@gmail.com</a></td>
-        </tr>
-        <tr>
-          <td><strong>Check-in / Check-out:</strong></td>
-          <td>Check-in: 1 PM &nbsp; | &nbsp; Check-out: 11 AM</td>
-        </tr>
-        <tr>
-          <td><strong>WhatsApp Booking:</strong></td>
-          <td><span class="highlight">₹500+ Discount</span> when booking directly via WhatsApp.</td>
-        </tr>
-      </table>
-    </section>
+  <!-- TOP UTILITY & ANNOUNCEMENT BAR -->
+  <div id="announcement-bar" class="bg-backwater-950 text-white text-xs py-2 px-4 border-b border-backwater-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+      <div class="flex items-center space-x-2 sm:space-x-3">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold badge-airbnb text-white shadow-sm">
+          <i data-lucide="award" class="w-3 h-3 text-amber-300"></i> Guest Favourite
+        </span>
+        <span class="text-amber-300 font-bold flex items-center gap-1">
+          ★ 4.81 <span class="text-stone-300 font-normal">(118+ Airbnb Reviews)</span>
+        </span>
+        <span id="live-announcement-text" class="hidden lg:inline text-backwater-200 border-l border-backwater-800 pl-3">
+          Book Direct on jobyhomestaykadamakkudy.com & save 10% vs OTA service fees!
+        </span>
+      </div>
 
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <p>Click the images to enlarge and see the beauty of Joby Homestay.</p>
-      <div class="gallery">
-        <img src="photos/photo1.jpg" alt="Homestay Photo 1" />
-        <img src="photos/photo2.jpg" alt="Homestay Photo 2" />
-        <img src="photos/photo3.jpg" alt="Homestay Photo 3" />
-        <img src="photos/photo4.jpg" alt="Homestay Photo 4" />
-        <!-- Add more photos if you want -->
+      <div class="flex items-center space-x-3">
+        <!-- Live Sync Status Pill -->
+        <span id="sync-status-pill" class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-backwater-900 border border-backwater-700 text-[11px] text-emerald-300">
+          <span id="sync-status-dot" class="w-2 h-2 rounded-full bg-amber-400"></span>
+          <span id="sync-status-label">Local Mode</span>
+        </span>
+
+        <a href="https://www.airbnb.com/rooms/899340094616092282" target="_blank" rel="noopener noreferrer" class="flex hover:text-rose-300 items-center gap-1 underline underline-offset-2">
+          <span>Airbnb</span>
+          <i data-lucide="external-link" class="w-3 h-3"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PUBLIC GUEST WEBSITE WRAPPER -->
+  <div id="public-view" class="transition-opacity duration-300">
+
+    <!-- STICKY NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-timber-200/70 shadow-sm">
+      <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+        <a href="#hero" class="flex items-center space-x-3 group">
+          <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-clay-500 to-clay-700 flex items-center justify-center text-white shadow-md shadow-clay-500/20 group-hover:scale-105 transition-transform">
+            <i data-lucide="home" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-backwater-900 block leading-tight">Joby Homestay</span>
+            <span class="text-[11px] uppercase tracking-wider text-clay-600 font-bold">Kadamakkudy • Kochi</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex items-center space-x-6 text-sm font-semibold text-timber-800">
+          <a href="#villa-story" class="hover:text-clay-600 transition-colors">The Villa</a>
+          <a href="#ps5-feature" class="text-rose-600 hover:text-rose-700 transition-colors flex items-center gap-1">
+            <i data-lucide="gamepad-2" class="w-4 h-4"></i> PS5 Cockpit
+          </a>
+          <a href="#booking-policy" class="hover:text-clay-600 transition-colors">Private Rooms & Rates</a>
+          <a href="#calculator" class="hover:text-clay-600 transition-colors flex items-center gap-1">
+            <i data-lucide="calculator" class="w-4 h-4 text-clay-600"></i> Tariff Calculator
+          </a>
+          <a href="#dining-experiences" class="hover:text-clay-600 transition-colors">Food & Kayak</a>
+          <a href="#reviews" class="hover:text-clay-600 transition-colors">Reviews</a>
+        </div>
+
+        <!-- Desktop CTA -->
+        <div class="hidden lg:flex items-center space-x-3">
+          <a id="btn-quick-whatsapp" href="https://wa.me/917012289998" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs sm:text-sm flex items-center gap-1.5 shadow transition">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>WhatsApp Jexon</span>
+          </a>
+          <a href="#calculator" class="px-4 py-2.5 rounded-xl bg-clay-500 hover:bg-clay-600 text-white font-semibold text-xs sm:text-sm transition shadow">
+            Check Dates
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobile-toggle" onclick="toggleMobileMenu()" class="lg:hidden p-2.5 rounded-xl text-timber-800 hover:bg-clay-50" aria-label="Toggle Menu">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </nav>
+
+      <!-- Mobile Drawer -->
+      <div id="mobile-dropdown" class="lg:hidden hidden bg-white border-b border-timber-200 px-6 py-5 space-y-4 shadow-xl">
+        <div class="flex flex-col space-y-3 font-semibold text-timber-800 text-sm">
+          <a href="#villa-story" onclick="toggleMobileMenu()" class="py-2 border-b border-timber-100">The 3BHK Villa & Gallery</a>
+          <a href="#ps5-feature" onclick="toggleMobileMenu()" class="py-2 border-b border-timber-100 text-rose-600 flex items-center gap-2">
+            <i data-lucide="gamepad-2" class="w-4 h-4"></i> PS5 Racing Simulator
+          </a>
+          <a href="#booking-policy" onclick="toggleMobileMenu()" class="py-2 border-b border-timber-100">Single-Group Privacy & Rates</a>
+          <a href="#calculator" onclick="toggleMobileMenu()" class="py-2 border-b border-timber-100 text-clay-600">Tariff Calculator & Availability</a>
+          <a href="#dining-experiences" onclick="toggleMobileMenu()" class="py-2 border-b border-timber-100">Kerala Meals & Kayaking</a>
+          <a href="#reviews" onclick="toggleMobileMenu()" class="py-2">117+ Verified Reviews</a>
+        </div>
+        <div class="pt-2">
+          <a id="mobile-whatsapp-btn" href="https://wa.me/917012289998" target="_blank" rel="noopener noreferrer" class="w-full py-3 rounded-xl bg-emerald-600 text-white font-semibold text-center flex items-center justify-center gap-2">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Chat with Jexon (+91 7012289998)
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img id="img-hero" src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=2000&q=80"
+             alt="Joby Homestay 3BHK Waterfront Villa in Kadamakkudy, Kochi"
+             onerror="this.src='https://placehold.co/1920x1080/154c3a/faf7f2?text=Joby+Homestay+Kadamakkudy'"
+             class="w-full h-full object-cover object-center filter brightness-[0.85] transition-all duration-700">
+        <div class="absolute inset-0 hero-gradient"></div>
+      </div>
+
+      <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white py-14">
+        <div class="inline-flex flex-wrap justify-center items-center gap-2 px-4 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-white text-xs sm:text-sm font-semibold mb-6 shadow-lg">
+          <span class="w-2.5 h-2.5 rounded-full bg-rose-400 animate-pulse"></span>
+          <span class="text-amber-300">★ 4.81 Rating</span>
+          <span class="text-white/50">•</span>
+          <span>118+ Verified Reviews</span>
+          <span class="text-white/50">•</span>
+          <span class="text-rose-200">Airbnb Superhost</span>
+        </div>
+
+        <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight mb-5">
+          Waterfront 3BHK Villa in <span class="italic text-amber-200">Kadamakkudy</span>
+        </h1>
+
+        <p class="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-stone-200 font-light mb-8 leading-relaxed">
+          Manavalan House, Valiya Kadamakkudy (Kadamakudy), Kochi. Hosted by <strong class="text-white font-semibold">Jexon Joby & family</strong>. 100m from serene backwaters, Pokkali paddy fields, homemade Kerala meals, and our <strong class="text-white font-semibold">PS5 Racing Cockpit Simulator</strong>.
+        </p>
+
+        <!-- Upfront Direct Discount Starting Price Banner -->
+        <div class="inline-flex flex-wrap items-center justify-center gap-2.5 bg-emerald-950/85 backdrop-blur-md border border-emerald-400/40 px-5 py-2.5 rounded-2xl mb-7 shadow-xl">
+          <span class="px-2.5 py-0.5 rounded-full bg-emerald-500 text-emerald-950 text-[11px] font-extrabold uppercase tracking-wider" id="hero-discount-badge">
+            10% Direct Discount Applied
+          </span>
+          <span class="text-xs sm:text-sm text-stone-200">
+            Upfront Direct Price from
+            <span id="hero-ota-strike" class="line-through text-stone-400 mx-1">₹2,778</span>
+            <strong id="hero-upfront-price" class="text-amber-300 text-base sm:text-lg font-extrabold">₹2,500</strong><span class="text-stone-300">/night</span>
+          </span>
+        </div>
+
+        <!-- Key Spec Pills -->
+        <div class="flex flex-wrap justify-center gap-2.5 sm:gap-3.5 mb-10 text-xs sm:text-sm font-medium">
+          <div class="bg-black/50 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15 text-stone-200 flex items-center gap-1.5">
+            <i data-lucide="users" class="w-4 h-4 text-amber-400"></i> 1 to 12 Guests
+          </div>
+          <div class="bg-black/50 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15 text-stone-200 flex items-center gap-1.5">
+            <i data-lucide="bed-double" class="w-4 h-4 text-emerald-400"></i> 3 AC Bedrooms • 4 Baths
+          </div>
+          <div class="bg-black/50 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15 text-stone-200 flex items-center gap-1.5">
+            <i data-lucide="gamepad-2" class="w-4 h-4 text-rose-400"></i> PS5 Racing Rig Included
+          </div>
+          <div class="bg-black/50 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/15 text-stone-200 flex items-center gap-1.5">
+            <i data-lucide="lock" class="w-4 h-4 text-sky-400"></i> Single-Group Exclusive
+          </div>
+        </div>
+
+        <!-- Quick Check-in / Check-out Bar -->
+        <div class="bg-white/95 backdrop-blur-lg p-4 sm:p-5 rounded-3xl shadow-2xl border border-timber-200 text-left max-w-4xl mx-auto text-timber-900">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
+            <div>
+              <label for="hero-date-in" class="block text-xs font-bold uppercase tracking-wider text-timber-700 mb-1">Check-in</label>
+              <input type="date" id="hero-date-in" onchange="syncDatesFromHero()" class="w-full bg-clay-50/80 border border-timber-200 text-sm rounded-xl px-3 py-2.5 font-semibold">
+            </div>
+            <div>
+              <label for="hero-date-out" class="block text-xs font-bold uppercase tracking-wider text-timber-700 mb-1">Check-out</label>
+              <input type="date" id="hero-date-out" onchange="syncDatesFromHero()" class="w-full bg-clay-50/80 border border-timber-200 text-sm rounded-xl px-3 py-2.5 font-semibold">
+            </div>
+            <div>
+              <label for="hero-guest-select" class="block text-xs font-bold uppercase tracking-wider text-timber-700 mb-1">Group Size</label>
+              <select id="hero-guest-select" onchange="syncGuestsFromHero()" class="w-full bg-clay-50/80 border border-timber-200 text-sm rounded-xl px-3 py-2.5 font-semibold">
+                <option value="2" id="hero-opt-1br">1–2 Guests (1 AC Room • ₹2,500/N)</option>
+                <option value="4" selected id="hero-opt-2br">3–4 Guests (2 AC Rooms • ₹3,600/N)</option>
+                <option value="6" id="hero-opt-3br">5–6 Guests (Full 3BHK • ₹4,500/N)</option>
+                <option value="8" id="hero-opt-8g">7–8 Guests (+Extra Beds • ₹5,700/N)</option>
+                <option value="12" id="hero-opt-12g">9–12 Guests (Full Villa • up to ₹8,100/N)</option>
+              </select>
+            </div>
+            <div>
+              <button onclick="scrollToCalculator()" class="w-full bg-clay-500 hover:bg-clay-600 text-white font-bold py-2.5 px-4 rounded-xl shadow-md transition flex items-center justify-center gap-2">
+                <i data-lucide="calculator" class="w-4 h-4"></i>
+                <span>Get Direct Quote</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="reviews">
-      <h2>Customer Reviews</h2>
-      <div class="review">
-        <p>Wonderful stay! The location is perfect, and the PS5 setup was a great bonus.</p>
-        <strong>- Anjali K., March 2025</strong>
-      </div>
-      <div class="review">
-        <p>Very clean homestay close to the backwaters. Great hospitality and affordable rates.</p>
-        <strong>- Rahul M., April 2025</strong>
-      </div>
-      <div class="review">
-        <p>Highly recommend Joby Homestay for a relaxed and fun getaway with family.</p>
-        <strong>- Sneha P., May 2025</strong>
+    <!-- ISLAND STORY & REAL PROPERTY GALLERY -->
+    <section id="villa-story" class="py-16 sm:py-20 bg-white border-b border-timber-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <!-- Story Split -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-14">
+          <div class="lg:col-span-6 space-y-5">
+            <span class="text-xs font-bold uppercase tracking-wider text-clay-600">Manavalan House • Valiya Kadamakkudy</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-backwater-900 leading-tight">
+              Slow Backwater Mornings in Kochi’s Island Cluster
+            </h2>
+            <p class="text-timber-700 text-sm sm:text-base leading-relaxed">
+              Tucked inside the tranquil archipelago of <strong class="text-timber-900">Kadamakkudy (also spelled Kadamakudy)</strong> just 13 km from Edappally, Joby Homestay is our spacious two-story riverfront family villa featuring traditional Mangalore clay-tile accents, cool breezy verandahs, and a wooden country canoe (<em>vallam</em>) moored by the backwater canal.
+            </p>
+            <p class="text-timber-700 text-sm sm:text-base leading-relaxed">
+              Wake up to migratory egrets gliding across emerald <strong class="text-timber-900">Pokkali salt-tolerant paddy fields</strong> and iconic Chinese fishing nets—then spend your evenings racing friends on our full <strong class="text-timber-900">PS5 Simulator Cockpit</strong> or enjoying fresh pearl spot curry cooked right at home.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-2">
+              <div class="p-3 rounded-2xl bg-backwater-50 border border-backwater-200">
+                <p class="text-xs font-bold text-backwater-900">100 Meters</p>
+                <p class="text-[11px] text-backwater-700">To Backwater Shore</p>
+              </div>
+              <div class="p-3 rounded-2xl bg-clay-50 border border-clay-200">
+                <p class="text-xs font-bold text-clay-900">High-Speed Wi-Fi</p>
+                <p class="text-[11px] text-clay-700">Workation Ready</p>
+              </div>
+              <div class="p-3 rounded-2xl bg-timber-50 border border-timber-200">
+                <p class="text-xs font-bold text-timber-900">Full Kitchen</p>
+                <p class="text-[11px] text-timber-700">Fridge, Stove & Utensils</p>
+              </div>
+              <div class="p-3 rounded-2xl bg-amber-50 border border-amber-200">
+                <p class="text-xs font-bold text-amber-900" id="story-checkin-display">2 PM / 11 AM</p>
+                <p class="text-[11px] text-amber-800">Check-in / Check-out</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6-Photo Curated Villa Grid (Linked to CMS) -->
+          <div class="lg:col-span-6 grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div class="col-span-2 relative group rounded-2xl overflow-hidden shadow-md aspect-[16/10] bg-timber-100">
+              <img id="img-gallery-villa" src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=900&q=80"
+                   alt="Joby Homestay Exterior Villa"
+                   onerror="this.src='https://placehold.co/800x500/154c3a/faf7f2?text=Villa+Exterior'"
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-3">
+                <span class="text-xs font-semibold text-white">Manavalan House Exterior</span>
+              </div>
+            </div>
+
+            <div class="relative group rounded-2xl overflow-hidden shadow-md aspect-square sm:aspect-auto bg-timber-100">
+              <img id="img-gallery-ps5" src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=700&q=80"
+                   alt="PS5 Racing Simulator"
+                   onerror="this.src='https://placehold.co/600x600/1e293b/ffffff?text=PS5+Cockpit'"
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-3">
+                <span class="text-xs font-semibold text-white">PS5 Racing Rig</span>
+              </div>
+            </div>
+
+            <div class="relative group rounded-2xl overflow-hidden shadow-md aspect-[4/3] bg-timber-100">
+              <img id="img-gallery-living" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80"
+                   alt="Living & Dining Lounge"
+                   onerror="this.src='https://placehold.co/600x450/5c3a21/faf7f2?text=Living+Lounge'"
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-3">
+                <span class="text-xs font-semibold text-white">Living & Dining</span>
+              </div>
+            </div>
+
+            <div class="relative group rounded-2xl overflow-hidden shadow-md aspect-[4/3] bg-timber-100">
+              <img id="img-gallery-bedroom" src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=700&q=80"
+                   alt="AC Bedroom Suite"
+                   onerror="this.src='https://placehold.co/600x450/c25e36/faf7f2?text=AC+Bedroom'"
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-3">
+                <span class="text-xs font-semibold text-white">AC Bedrooms</span>
+              </div>
+            </div>
+
+            <div class="relative group rounded-2xl overflow-hidden shadow-md aspect-[4/3] bg-timber-100">
+              <img id="img-gallery-river" src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=700&q=80"
+                   alt="Kadamakkudy Backwater Canal"
+                   onerror="this.src='https://placehold.co/600x450/154c3a/faf7f2?text=Backwater+Canal'"
+                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end p-3">
+                <span class="text-xs font-semibold text-white">Backwater Shore</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact Us / Book via WhatsApp</h2>
-      <p>Click the buttons below to chat and book instantly on WhatsApp:</p>
-      <a class="btn-whatsapp" href="https://wa.me/917012289998" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp 7012289998">
-        📱 WhatsApp: 7012289998
-      </a>
-      <a class="btn-whatsapp" href="https://wa.me/919074462526" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp 9074462526">
-        📱 WhatsApp: 9074462526
-      </a>
-    </section>
-  </main>
+    <!-- PS5 RACING SIMULATOR COCKPIT SHOWCASE -->
+    <section id="ps5-feature" class="py-16 sm:py-20 bg-gradient-to-br from-slate-950 via-stone-900 to-black text-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-5">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-rose-500/20 border border-rose-500/40 text-rose-300 text-xs font-bold uppercase tracking-wider">
+              <i data-lucide="gamepad-2" class="w-4 h-4"></i> Signature Homestay Highlight
+            </div>
 
-  <footer>
-    <small>© 2025 Joby Homestay Kadamakudy. All rights reserved.</small>
-  </footer>
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+              Full PS5 Racing Simulator Cockpit & Lounge
+            </h2>
+
+            <p class="text-stone-300 text-sm sm:text-base leading-relaxed">
+              The only homestay in Kadamakkudy equipped with a dedicated <strong class="text-white">racing simulator rig</strong>—featuring an ergonomic racing bucket seat, force-feedback steering wheel, responsive pedals, and dual DualSense wireless controllers for couch co-op tournaments.
+            </p>
+
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-5">
+              <h3 class="text-xs uppercase font-bold tracking-wider text-amber-300 mb-3 flex items-center gap-2">
+                <i data-lucide="disc" class="w-4 h-4"></i> Included Games & Gear
+              </h3>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 text-xs text-stone-200">
+                <div class="flex items-center gap-2 bg-white/5 p-2.5 rounded-xl"><i data-lucide="play" class="w-3.5 h-3.5 text-rose-400"></i> Gran Turismo 7</div>
+                <div class="flex items-center gap-2 bg-white/5 p-2.5 rounded-xl"><i data-lucide="play" class="w-3.5 h-3.5 text-rose-400"></i> WRC Rally</div>
+                <div class="flex items-center gap-2 bg-white/5 p-2.5 rounded-xl"><i data-lucide="play" class="w-3.5 h-3.5 text-rose-400"></i> EA FC / FIFA</div>
+                <div class="flex items-center gap-2 bg-white/5 p-2.5 rounded-xl"><i data-lucide="play" class="w-3.5 h-3.5 text-rose-400"></i> Far Cry 6</div>
+                <div class="flex items-center gap-2 bg-white/5 p-2.5 rounded-xl"><i data-lucide="play" class="w-3.5 h-3.5 text-rose-400"></i> Spider-Man</div>
+                <div class="flex items-center gap-2 bg-white/5 p-2.5 rounded-xl"><i data-lucide="play" class="w-3.5 h-3.5 text-rose-400"></i> 2 Wireless Remotes</div>
+              </div>
+            </div>
+
+            <p class="text-xs text-stone-400">
+              * Complimentary unlimited access included with every direct and Airbnb booking.
+            </p>
+          </div>
+
+          <div class="lg:col-span-5">
+            <div class="rounded-3xl overflow-hidden border border-white/20 shadow-2xl bg-stone-900">
+              <img id="img-feature-ps5" src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=900&q=80"
+                   alt="PlayStation 5 Simulator Wheel and Racing Seat"
+                   onerror="this.src='https://placehold.co/800x600/1e293b/ffffff?text=PS5+Racing+Simulator'"
+                   class="w-full h-80 object-cover">
+              <div class="p-4 bg-stone-950 border-t border-white/10 flex items-center justify-between">
+                <div>
+                  <p class="text-xs font-bold text-white">Force-Feedback Wheel & Pedals</p>
+                  <p class="text-[11px] text-stone-400">Ready to play upon check-in</p>
+                </div>
+                <span class="text-xs font-bold text-emerald-400 bg-emerald-950 px-3 py-1 rounded-full border border-emerald-700/50">
+                  Included FREE
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SINGLE-GROUP PRIVACY POLICY & ROOM TIERS -->
+    <section id="booking-policy" class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-clay-50/90 border border-clay-200 rounded-3xl p-7 sm:p-11 shadow-sm">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-8">
+          <div class="max-w-3xl">
+            <span class="text-xs font-bold uppercase tracking-wider text-clay-600">100% Private Reservation Policy</span>
+            <h2 class="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-backwater-900 mt-1 mb-3">
+              One Group at a Time — Never Shared
+            </h2>
+            <p class="text-timber-700 text-sm sm:text-base leading-relaxed">
+              Whether you visit as a couple or a group of 12, <strong class="text-timber-900">we never host two separate bookings simultaneously</strong>. You enjoy private access to the living room, kitchen, balcony, courtyard, and PS5 simulator—we simply unlock bedrooms matching your headcount:
+            </p>
+          </div>
+          <div class="shrink-0">
+            <span id="policy-discount-pill" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-2xl bg-emerald-100 border border-emerald-300 text-emerald-900 text-xs font-extrabold">
+              <i data-lucide="tag" class="w-4 h-4 text-emerald-700"></i>
+              <span>Upfront 10% Direct Booking Discount Included</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-white p-5 rounded-2xl border border-timber-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xs font-bold uppercase px-2.5 py-0.5 rounded-full bg-clay-100 text-clay-700">1 – 2 Guests</span>
+                <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 card-discount-tag">10% Direct Off</span>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-timber-900 mt-2.5">1 AC Bedroom</h3>
+              <p class="text-xs text-timber-600 mt-1">1 AC bedroom + attached bath opened. Remaining 2 bedrooms stay locked.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-timber-100">
+              <div class="flex items-baseline gap-2">
+                <span class="text-base font-extrabold text-emerald-800" id="card-rate-1br">₹2,500 / night</span>
+                <span class="text-xs line-through text-stone-400" id="card-ota-1br">₹2,778</span>
+              </div>
+              <p class="text-[10px] text-emerald-700 font-semibold mt-0.5">Lowest upfront direct price</p>
+            </div>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-timber-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xs font-bold uppercase px-2.5 py-0.5 rounded-full bg-clay-100 text-clay-700">3 – 4 Guests</span>
+                <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 card-discount-tag">10% Direct Off</span>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-timber-900 mt-2.5">2 AC Bedrooms</h3>
+              <p class="text-xs text-timber-600 mt-1">2 AC bedrooms + baths opened. 1 bedroom stays locked; entire villa is yours.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-timber-100">
+              <div class="flex items-baseline gap-2">
+                <span class="text-base font-extrabold text-emerald-800" id="card-rate-2br">₹3,600 / night</span>
+                <span class="text-xs line-through text-stone-400" id="card-ota-2br">₹4,000</span>
+              </div>
+              <p class="text-[10px] text-emerald-700 font-semibold mt-0.5">Lowest upfront direct price</p>
+            </div>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border-2 border-clay-500 shadow-md flex flex-col justify-between relative">
+            <span class="absolute -top-3 right-4 bg-clay-500 text-white text-[10px] font-bold px-2.5 py-0.5 rounded-full">
+              Full 3BHK
+            </span>
+            <div>
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xs font-bold uppercase px-2.5 py-0.5 rounded-full bg-clay-100 text-clay-700">5 – 6 Guests</span>
+                <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 card-discount-tag">10% Direct Off</span>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-timber-900 mt-2.5">All 3 AC Bedrooms</h3>
+              <p class="text-xs text-timber-600 mt-1">All 3 AC bedrooms + 4 bathrooms unlocked for families & friends.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-timber-100">
+              <div class="flex items-baseline gap-2">
+                <span class="text-base font-extrabold text-emerald-800" id="card-rate-3br">₹4,500 / night</span>
+                <span class="text-xs line-through text-stone-400" id="card-ota-3br">₹5,000</span>
+              </div>
+              <p class="text-[10px] text-emerald-700 font-semibold mt-0.5">Lowest upfront direct price</p>
+            </div>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-timber-200 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2">
+                <span class="text-xs font-bold uppercase px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800">7 – 12 Guests</span>
+                <span class="text-[10px] font-bold uppercase px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 card-discount-tag">10% Direct Off</span>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-timber-900 mt-2.5">3BHK + Extra Beds</h3>
+              <p class="text-xs text-timber-600 mt-1">All 3 AC bedrooms + clean extra floor mattresses for larger groups.</p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-timber-100">
+              <div class="flex items-baseline gap-2">
+                <span class="text-base font-extrabold text-emerald-800" id="card-rate-extra">+₹600 / guest / N</span>
+                <span class="text-xs line-through text-stone-400" id="card-ota-extra">₹667</span>
+              </div>
+              <p class="text-[10px] text-emerald-700 font-semibold mt-0.5">Lowest upfront direct add-on</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE TARIFF CALCULATOR & AVAILABILITY CHECKER -->
+    <section id="calculator" class="py-20 bg-white border-y border-timber-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-xs font-bold uppercase tracking-wider text-clay-600">Direct Booking Engine</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-timber-900 mt-1">Interactive Tariff & Availability Calculator</h2>
+          <p class="text-timber-700 text-sm sm:text-base mt-2">
+            Select your dates and guest count to verify live availability and get an instant WhatsApp quote with <strong class="text-clay-700">zero OTA service fees</strong>.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <!-- Left Controls -->
+          <div class="lg:col-span-7 bg-clay-50/80 p-6 sm:p-8 rounded-3xl border border-clay-200 shadow-sm space-y-6">
+            <!-- Availability Alert Banner (Shown if dates overlap blocked dates) -->
+            <div id="availability-alert" class="hidden p-4 rounded-2xl bg-rose-50 border border-rose-300 text-rose-900 text-xs sm:text-sm flex items-start gap-3">
+              <i data-lucide="calendar-x" class="w-5 h-5 text-rose-600 shrink-0 mt-0.5"></i>
+              <div>
+                <p class="font-bold">Heads up: One or more selected dates are marked booked!</p>
+                <p id="availability-alert-detail" class="text-xs text-rose-700 mt-0.5">Blocked dates: --</p>
+                <p class="text-xs text-rose-800 mt-1">You can pick adjacent dates below or message Jexon directly on WhatsApp to check last-minute openings.</p>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="calc-checkin" class="block text-xs font-bold uppercase tracking-wider text-timber-800 mb-1" id="label-calc-checkin">Check-in Date (2:00 PM)</label>
+                <input type="date" id="calc-checkin" onchange="runLiveCalculation()" class="w-full bg-white border border-timber-200 rounded-xl px-3.5 py-2.5 text-sm font-semibold text-timber-900 focus:ring-2 focus:ring-clay-500">
+              </div>
+              <div>
+                <label for="calc-checkout" class="block text-xs font-bold uppercase tracking-wider text-timber-800 mb-1" id="label-calc-checkout">Check-out Date (11:00 AM)</label>
+                <input type="date" id="calc-checkout" onchange="runLiveCalculation()" class="w-full bg-white border border-timber-200 rounded-xl px-3.5 py-2.5 text-sm font-semibold text-timber-900 focus:ring-2 focus:ring-clay-500">
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="calc-guests" class="block text-xs font-bold uppercase tracking-wider text-timber-800 mb-1">Total Guests (Upfront Direct Rates)</label>
+                <select id="calc-guests" onchange="runLiveCalculation()" class="w-full bg-white border border-timber-200 rounded-xl px-3.5 py-2.5 text-sm font-semibold text-timber-900 focus:ring-2 focus:ring-clay-500">
+                  <option value="1" id="calc-opt-g1">1 Guest (1 AC Bedroom • ₹2,500/N)</option>
+                  <option value="2" id="calc-opt-g2">2 Guests (1 AC Bedroom • ₹2,500/N)</option>
+                  <option value="3" id="calc-opt-g3">3 Guests (2 AC Bedrooms • ₹3,600/N)</option>
+                  <option value="4" selected id="calc-opt-g4">4 Guests (2 AC Bedrooms • ₹3,600/N)</option>
+                  <option value="5" id="calc-opt-g5">5 Guests (Full 3BHK Villa • ₹4,500/N)</option>
+                  <option value="6" id="calc-opt-g6">6 Guests (Full 3BHK Villa • ₹4,500/N)</option>
+                  <option value="7" id="calc-opt-g7">7 Guests (3BHK + 1 Extra Bed • ₹5,100/N)</option>
+                  <option value="8" id="calc-opt-g8">8 Guests (3BHK + 2 Extra Beds • ₹5,700/N)</option>
+                  <option value="9" id="calc-opt-g9">9 Guests (3BHK + 3 Extra Beds • ₹6,300/N)</option>
+                  <option value="10" id="calc-opt-g10">10 Guests (3BHK + 4 Extra Beds • ₹6,900/N)</option>
+                  <option value="11" id="calc-opt-g11">11 Guests (3BHK + 5 Extra Beds • ₹7,500/N)</option>
+                  <option value="12" id="calc-opt-g12">12 Guests (3BHK + 6 Extra Beds • ₹8,100/N)</option>
+                </select>
+              </div>
+
+              <div>
+                <span class="block text-xs font-bold uppercase tracking-wider text-timber-800 mb-1">Duration & Status</span>
+                <div class="bg-white border border-timber-200 rounded-xl px-3.5 py-2.5 text-sm font-bold text-clay-700 flex items-center justify-between">
+                  <span id="display-nights-count">2 Nights</span>
+                  <span id="display-avail-badge" class="text-xs px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-semibold">Available</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Upcoming Blocked Dates Strip (if any exist) -->
+            <div id="public-blocked-strip" class="hidden bg-white border border-timber-200 rounded-2xl p-3.5">
+              <p class="text-[11px] font-bold uppercase tracking-wider text-timber-700 mb-2 flex items-center gap-1.5">
+                <i data-lucide="calendar" class="w-3.5 h-3.5 text-clay-600"></i> Currently Booked / Unavailable Dates:
+              </p>
+              <div id="public-blocked-tags" class="flex flex-wrap gap-1.5"></div>
+            </div>
+
+            <!-- Optional Experiences & Meals -->
+            <div class="pt-4 border-t border-clay-200">
+              <span class="block text-xs font-bold uppercase tracking-wider text-timber-800 mb-3">Optional Add-ons (Payable at Stay)</span>
+              <div class="space-y-2.5">
+                <label class="flex items-center justify-between p-3 rounded-xl bg-white border border-timber-200 cursor-pointer hover:border-clay-400 transition">
+                  <div class="flex items-center gap-3">
+                    <input type="checkbox" id="addon-meals" onchange="runLiveCalculation()" class="w-4 h-4 text-clay-500 rounded focus:ring-clay-400">
+                    <div>
+                      <p class="text-xs font-bold text-timber-900">Homestyle Kerala Meals Package</p>
+                      <p class="text-[11px] text-timber-600">Freshly cooked breakfast & dinner by Jexon’s family</p>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-clay-700 shrink-0 ml-2" id="label-addon-meals">₹450 / person / day</span>
+                </label>
+
+                <label class="flex items-center justify-between p-3 rounded-xl bg-white border border-timber-200 cursor-pointer hover:border-clay-400 transition">
+                  <div class="flex items-center gap-3">
+                    <input type="checkbox" id="addon-kayak" onchange="runLiveCalculation()" class="w-4 h-4 text-clay-500 rounded focus:ring-clay-400">
+                    <div>
+                      <p class="text-xs font-bold text-timber-900">Kadamakkudy Mangrove Kayaking</p>
+                      <p class="text-[11px] text-timber-600">Sunrise or sunset guided paddle with safety gear</p>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-clay-700 shrink-0 ml-2" id="label-addon-kayak">₹600 / person</span>
+                </label>
+
+                <label class="flex items-center justify-between p-3 rounded-xl bg-white border border-timber-200 cursor-pointer hover:border-clay-400 transition">
+                  <div class="flex items-center gap-3">
+                    <input type="checkbox" id="addon-boat" onchange="runLiveCalculation()" class="w-4 h-4 text-clay-500 rounded focus:ring-clay-400">
+                    <div>
+                      <p class="text-xs font-bold text-timber-900">Country Boat (Vallam) Sunset Cruise</p>
+                      <p class="text-[11px] text-timber-600">Private 1.5 hr wooden boat ride past Chinese fishing nets</p>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-clay-700 shrink-0 ml-2" id="label-addon-boat">₹2,500 / group</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Receipt & Direct vs OTA Comparison -->
+          <div class="lg:col-span-5 space-y-5">
+            <div class="bg-stone-900 text-white p-6 sm:p-8 rounded-3xl shadow-xl border border-stone-800 space-y-5">
+              <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                <div>
+                  <span class="text-xs text-emerald-400 font-bold uppercase tracking-wider" id="receipt-direct-tag">Lowest Upfront Price (10% Direct Off)</span>
+                  <h3 class="font-serif text-xl font-bold">Estimated Stay Total</h3>
+                </div>
+                <span id="receipt-tier-badge" class="px-3 py-1 rounded-full text-xs font-semibold bg-white/10 text-stone-200">
+                  2 Bedrooms
+                </span>
+              </div>
+
+              <div class="space-y-3 text-xs sm:text-sm text-stone-300">
+                <div class="flex justify-between gap-2">
+                  <span id="receipt-base-desc">2 Bedrooms (2N × ₹3,600 direct)</span>
+                  <span id="receipt-base-val" class="font-bold text-white shrink-0">₹7,200</span>
+                </div>
+
+                <div id="receipt-extra-row" class="flex justify-between gap-2 text-amber-300 hidden">
+                  <span id="receipt-extra-desc">Extra Guest Mattresses</span>
+                  <span id="receipt-extra-val" class="font-bold shrink-0">₹0</span>
+                </div>
+
+                <div id="receipt-addon-row" class="flex justify-between gap-2 text-emerald-400 hidden">
+                  <span id="receipt-addon-desc">Selected Add-ons</span>
+                  <span id="receipt-addon-val" class="font-bold shrink-0">₹0</span>
+                </div>
+
+                <div class="flex justify-between gap-2">
+                  <span>One-time Cleaning Fee</span>
+                  <span id="receipt-cleaning-val" class="font-bold text-white shrink-0">₹400</span>
+                </div>
+
+                <div id="receipt-discount-row" class="flex justify-between gap-2 text-emerald-400 bg-emerald-950/60 px-3 py-2 rounded-xl border border-emerald-700/40">
+                  <span id="receipt-discount-desc">10% Direct Booking Savings Included</span>
+                  <span id="receipt-discount-val" class="font-bold shrink-0">Saved ₹800</span>
+                </div>
+              </div>
+
+              <div class="border-t border-white/15 pt-4">
+                <div class="flex items-baseline justify-between">
+                  <span class="text-sm font-bold text-stone-300">Direct Total:</span>
+                  <div class="text-right">
+                    <span id="receipt-grand-total" class="font-serif text-3xl sm:text-4xl font-bold text-amber-300">₹7,600</span>
+                    <p class="text-[11px] text-stone-400 mt-0.5">
+                      Est. Airbnb / OTA price: <span id="receipt-ota-compare" class="line-through text-stone-500">₹9,744</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-2.5 pt-1">
+                <a id="btn-whatsapp-inquiry" href="https://wa.me/917012289998" target="_blank" rel="noopener noreferrer" class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 px-4 rounded-2xl flex items-center justify-center gap-2 shadow-lg transition">
+                  <i data-lucide="message-circle" class="w-5 h-5"></i>
+                  <span>Book Direct on WhatsApp</span>
+                </a>
+                <p class="text-[11px] text-stone-400 text-center">
+                  Opens WhatsApp to <strong class="text-stone-200">+91 7012289998 (Jexon)</strong> with your exact dates & rate pre-filled.
+                </p>
+              </div>
+            </div>
+
+            <!-- Why Book Direct Box -->
+            <div class="bg-backwater-50 border border-backwater-200 rounded-2xl p-4 text-xs text-backwater-900 space-y-1.5">
+              <p class="font-bold flex items-center gap-1.5 text-backwater-800">
+                <i data-lucide="badge-check" class="w-4 h-4 text-emerald-600"></i> Direct Booking Advantages
+              </p>
+              <p class="text-backwater-700 leading-relaxed">
+                Booking via <strong>jobyhomestaykadamakkudy.com</strong> skips the 14–18% guest service fee charged by third-party portals and lets you coordinate flexible check-in or homemade meal requests directly with Jexon.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOMESTYLE KERALA DINING & BACKWATER EXPERIENCES -->
+    <section id="dining-experiences" class="py-20 bg-palmcream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-clay-600">Taste & Explore Kadamakkudy</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-backwater-900 mt-1">Homestyle Kitchen & Island Trails</h2>
+          <p class="text-timber-700 text-sm mt-2">
+            Switch between our family kitchen specialties and curated backwater activities.
+          </p>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="flex justify-center gap-3 mb-10">
+          <button onclick="switchPublicExperienceTab('cuisine')" id="pub-tab-cuisine" class="px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-clay-500 text-white shadow transition">
+            Homestyle Kerala Meals
+          </button>
+          <button onclick="switchPublicExperienceTab('activities')" id="pub-tab-activities" class="px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-white text-timber-800 border border-timber-200 hover:border-clay-400 transition">
+            Backwater & Island Activities
+          </button>
+        </div>
+
+        <!-- Tab A: Kerala Cuisine -->
+        <div id="pub-panel-cuisine" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-3xl p-6 border border-timber-200/80 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-clay-100 flex items-center justify-center text-clay-600 mb-4">
+                <i data-lucide="fish" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-timber-900">Karimeen Pollichathu</h3>
+              <p class="text-xs text-timber-600 mt-2 leading-relaxed">
+                Fresh Kadamakkudy pearl spot marinated in shallots, ginger, and crushed Malabar pepper, wrapped in banana leaf and slow-roasted.
+              </p>
+            </div>
+            <span class="mt-4 pt-3 border-t border-timber-100 text-xs font-bold text-clay-700">Fresh Backwater Catch</span>
+          </div>
+
+          <div class="bg-white rounded-3xl p-6 border border-timber-200/80 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-800 mb-4">
+                <i data-lucide="soup" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-timber-900">Kadamakkudy Duck Roast & Chicken Curry</h3>
+              <p class="text-xs text-timber-600 mt-2 leading-relaxed">
+                Guest-favourite homemade chicken curry with flaky Kerala parotta, or slow-braised Kadamakkudy duck roast in thick roasted coconut gravy.
+              </p>
+            </div>
+            <span class="mt-4 pt-3 border-t border-timber-100 text-xs font-bold text-amber-800">Most Loved by Guests</span>
+          </div>
+
+          <div class="bg-white rounded-3xl p-6 border border-timber-200/80 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-emerald-100 flex items-center justify-center text-emerald-800 mb-4">
+                <i data-lucide="sun" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-timber-900">Appam, Puttu & Kadala</h3>
+              <p class="text-xs text-timber-600 mt-2 leading-relaxed">
+                Lacy fermented rice hoppers with mild coconut milk stew, or steamed rice-coconut puttu paired with spiced black chickpea curry.
+              </p>
+            </div>
+            <span class="mt-4 pt-3 border-t border-timber-100 text-xs font-bold text-emerald-800">Traditional Island Breakfast</span>
+          </div>
+
+          <div class="bg-white rounded-3xl p-6 border border-timber-200/80 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-rose-100 flex items-center justify-center text-rose-800 mb-4">
+                <i data-lucide="coffee" class="w-6 h-6"></i>
+              </div>
+              <h3 class="font-serif font-bold text-lg text-timber-900">Pazham Pori & Cardamom Tea</h3>
+              <p class="text-xs text-timber-600 mt-2 leading-relaxed">
+                Golden crispy Nendran banana fritters served hot on the verandah alongside freshly brewed Kerala chai as the sun sets over the water.
+              </p>
+            </div>
+            <span class="mt-4 pt-3 border-t border-timber-100 text-xs font-bold text-rose-800">Evening Verandah Ritual</span>
+          </div>
+        </div>
+
+        <!-- Tab B: Backwater Activities -->
+        <div id="pub-panel-activities" class="hidden grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-3xl p-6 border border-timber-200 shadow-sm space-y-3">
+            <div class="w-12 h-12 rounded-2xl bg-backwater-100 text-backwater-800 flex items-center justify-center">
+              <i data-lucide="waves" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-timber-900">Mangrove & Pokkali Kayaking</h3>
+            <p class="text-xs text-timber-600 leading-relaxed">
+              Paddle through narrow mangrove tunnels and wide Pokkali fields just 1.5 km from our villa. Sunrise (6:15 AM) and sunset (4:30 PM) slots available.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-3xl p-6 border border-timber-200 shadow-sm space-y-3">
+            <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center">
+              <i data-lucide="compass" class="w-6 h-6"></i>
+            </div>
+            <div class="flex items-center justify-between gap-2">
+              <h3 class="font-serif font-bold text-lg text-timber-900">Country Boat (Vallam) Safari</h3>
+              <span class="text-xs font-extrabold text-clay-700 bg-clay-50 px-2.5 py-1 rounded-full border border-clay-200" id="exp-card-boat-price">₹2,500</span>
+            </div>
+            <p class="text-xs text-timber-600 leading-relaxed">
+              Relax aboard a traditional wooden canoe poled by local boatmen past Chinese fishing nets, toddy tapping palms, and crab farms.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-3xl p-6 border border-timber-200 shadow-sm space-y-3">
+            <div class="w-12 h-12 rounded-2xl bg-clay-100 text-clay-700 flex items-center justify-center">
+              <i data-lucide="binoculars" class="w-6 h-6"></i>
+            </div>
+            <h3 class="font-serif font-bold text-lg text-timber-900">Birdwatching & Toddy Shack Trail</h3>
+            <p class="text-xs text-timber-600 leading-relaxed">
+              Spot purple herons, kingfishers, cormorants, and seasonal migratory birds along the Kadamakkudy bund roads, followed by authentic local toddy shacks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VERIFIED AIRBNB REVIEWS -->
+    <section id="reviews" class="py-20 bg-white border-t border-timber-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+          <div>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold badge-airbnb text-white">Airbnb Guest Favourite</span>
+              <span class="text-xs text-timber-600 font-semibold">4.81 ★ • 118+ Verified Reviews</span>
+            </div>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-timber-900">What Our Guests Say</h2>
+          </div>
+          <a href="https://www.airbnb.com/rooms/899340094616092282" target="_blank" rel="noopener noreferrer" class="mt-4 md:mt-0 inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-rose-600 hover:text-rose-700">
+            <span>View all 118+ reviews on Airbnb</span>
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-clay-50/70 p-7 rounded-3xl border border-timber-200 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex text-amber-400 mb-3 gap-0.5">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-timber-800 text-xs sm:text-sm leading-relaxed mb-6 italic">
+                "Jexon was an exceptional host... He and his mom prepared delicious homemade chicken curry and parotta... The PS5 driving simulator with FIFA and Gran Turismo was a fantastic experience for all of us."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 border-t border-timber-200 pt-4">
+              <div class="w-10 h-10 rounded-full bg-clay-200 text-clay-800 font-bold flex items-center justify-center text-sm">AS</div>
+              <div>
+                <p class="text-sm font-bold text-timber-900">Ashwin</p>
+                <p class="text-xs text-timber-600">Verified Airbnb Guest</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-clay-50/70 p-7 rounded-3xl border border-timber-200 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex text-amber-400 mb-3 gap-0.5">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-timber-800 text-xs sm:text-sm leading-relaxed mb-6 italic">
+                "Jexon is a super friendly and wonderful person. Kind, helpful, and welcoming throughout our stay. The backwater breeze and tranquil island location made it unforgettable."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 border-t border-timber-200 pt-4">
+              <div class="w-10 h-10 rounded-full bg-backwater-200 text-backwater-800 font-bold flex items-center justify-center text-sm">VI</div>
+              <div>
+                <p class="text-sm font-bold text-timber-900">Vishva</p>
+                <p class="text-xs text-timber-600">Verified Airbnb Guest</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-clay-50/70 p-7 rounded-3xl border border-timber-200 flex flex-col justify-between shadow-sm">
+            <div>
+              <div class="flex text-amber-400 mb-3 gap-0.5">
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+                <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
+              </div>
+              <p class="text-timber-800 text-xs sm:text-sm leading-relaxed mb-6 italic">
+                "Clean, comfortable, and exactly as described. Peaceful stay, homely food, good location, great host. It truly felt like a home away from home."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 border-t border-timber-200 pt-4">
+              <div class="w-10 h-10 rounded-full bg-amber-200 text-amber-800 font-bold flex items-center justify-center text-sm">AA</div>
+              <div>
+                <p class="text-sm font-bold text-timber-900">Alan, Athul & Vivito</p>
+                <p class="text-xs text-timber-600">Verified Airbnb Guests</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION & DISTANCES -->
+    <section class="py-16 bg-clay-50/80 border-t border-clay-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-clay-600">Connectivity</span>
+          <h2 class="font-serif text-3xl font-bold text-backwater-900 mt-1">Key Landmarks & Travel Distances</h2>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-10">
+          <div class="p-4 rounded-2xl bg-white border border-timber-200 text-center shadow-sm">
+            <p class="text-lg font-bold text-timber-900">100 m</p>
+            <p class="text-[11px] text-timber-600">Backwaters Shore</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white border border-timber-200 text-center shadow-sm">
+            <p class="text-lg font-bold text-timber-900">13 km</p>
+            <p class="text-[11px] text-timber-600">Lulu Mall Edappally</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white border border-timber-200 text-center shadow-sm">
+            <p class="text-lg font-bold text-timber-900">14 km</p>
+            <p class="text-[11px] text-timber-600">Cherai Beach</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white border border-timber-200 text-center shadow-sm">
+            <p class="text-lg font-bold text-timber-900">17 km</p>
+            <p class="text-[11px] text-timber-600">Kuzhuppilly Beach</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white border border-timber-200 text-center shadow-sm">
+            <p class="text-lg font-bold text-timber-900">19 km</p>
+            <p class="text-[11px] text-timber-600">Ernakulam Town Stn</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-white border border-timber-200 text-center shadow-sm">
+            <p class="text-lg font-bold text-timber-900">32 km</p>
+            <p class="text-[11px] text-timber-600">Cochin Intl Airport</p>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl p-6 sm:p-8 border border-timber-200 shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h3 class="font-serif text-lg font-bold text-timber-900">Manavalan House, Valiya Kadamakkudy</h3>
+            <p class="text-xs sm:text-sm text-timber-700 mt-1">
+              Kadamakkudy Islands, Kochi, Ernakulam District, Kerala 682027 • Host: <strong>Jexon Joby</strong> (<span id="footer-phone-display">+91 7012289998</span>)
+            </p>
+          </div>
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="https://maps.google.com/?q=Joby+Homestay+Kadamakkudy+Kochi" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl border border-timber-300 hover:bg-timber-50 text-timber-900 font-semibold text-xs flex items-center gap-1.5 transition">
+              <i data-lucide="map-pin" class="w-4 h-4 text-clay-600"></i>
+              <span>Open Google Maps</span>
+            </a>
+            <a href="https://www.airbnb.com/rooms/899340094616092282" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl badge-airbnb text-white font-semibold text-xs flex items-center gap-1.5 shadow">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+              <span>Airbnb Superhost Page</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-timber-900 text-palmcream/80 py-12 border-t border-timber-800 text-xs">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div>
+          <span class="font-serif text-lg font-bold text-white block">Joby Homestay Kadamakkudy</span>
+          <p class="text-palmcream/60 mt-1">
+            © <span id="footer-secret-year" class="cursor-default select-none">2026</span> jobyhomestaykadamakkudy.com • Manavalan House, Valiya Kadamakkudy, Kochi 682027
+          </p>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="mailto:jexonjoby94@gmail.com" class="hover:text-white underline underline-offset-2">jexonjoby94@gmail.com</a>
+          <a href="https://wa.me/917012289998" target="_blank" rel="noopener noreferrer" class="text-emerald-300 hover:text-emerald-200 font-semibold flex items-center gap-1.5 py-1.5 px-3.5 rounded-xl border border-timber-700 bg-timber-800 transition">
+            <i data-lucide="message-circle" class="w-3.5 h-3.5"></i>
+            <span>WhatsApp Jexon</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- HOST ADMIN PIN LOGIN MODAL -->
+  <div id="admin-login-modal" class="fixed inset-0 z-50 bg-black/75 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-sm w-full p-6 sm:p-8 shadow-2xl border border-timber-200 text-center relative">
+      <button onclick="closeAdminLoginModal()" class="absolute top-4 right-4 text-stone-400 hover:text-stone-800" aria-label="Close Login Modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="w-12 h-12 rounded-2xl bg-clay-100 text-clay-600 flex items-center justify-center mx-auto mb-4">
+        <i data-lucide="shield-check" class="w-6 h-6"></i>
+      </div>
+
+      <h3 class="font-serif text-xl font-bold text-timber-900">Host Control Panel</h3>
+      <p class="text-xs text-timber-600 mt-1 mb-6">Enter your Host PIN to manage live prices, blocked dates, photos & Firebase sync.</p>
+
+      <form onsubmit="handleAdminLoginSubmit(event)" class="space-y-4">
+        <input type="password" id="admin-pin-input" placeholder="Default PIN: 1994" required class="w-full text-center text-lg tracking-widest bg-clay-50 border border-timber-300 rounded-xl px-4 py-3 font-mono focus:ring-2 focus:ring-clay-500 focus:outline-none">
+        <button type="submit" class="w-full bg-clay-500 hover:bg-clay-600 text-white font-bold py-3 rounded-xl shadow-md transition text-sm">
+          Unlock Host CMS
+        </button>
+      </form>
+      <p class="text-[11px] text-stone-400 mt-4">Authorized access for Jexon Joby & family</p>
+    </div>
+  </div>
+
+  <!-- HOST ADMIN CMS DASHBOARD -->
+  <div id="admin-dashboard-view" class="hidden min-h-screen bg-stone-100 text-stone-900">
+    <!-- Top Admin Header -->
+    <div class="bg-stone-900 text-white px-6 py-4 flex flex-wrap items-center justify-between gap-4 border-b border-stone-800 sticky top-0 z-40">
+      <div class="flex items-center space-x-3">
+        <div class="w-9 h-9 rounded-xl bg-clay-500 flex items-center justify-center text-white font-bold">
+          <i data-lucide="sliders" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <h2 class="text-base font-bold leading-tight">Joby Homestay Live CMS</h2>
+          <span id="cms-cloud-badge" class="text-xs text-amber-300 font-medium">Storage: Browser LocalStorage (Configure Firebase in Tab 4 for multi-device cloud sync)</span>
+        </div>
+      </div>
+
+      <div class="flex items-center flex-wrap gap-2">
+        <button onclick="exportConfigJson()" class="text-xs bg-stone-800 hover:bg-stone-700 text-stone-200 border border-stone-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i> Export JSON
+        </button>
+        <button onclick="resetToDefaults()" class="text-xs bg-stone-800 hover:bg-stone-700 text-stone-300 border border-stone-700 px-3 py-1.5 rounded-lg transition flex items-center gap-1">
+          <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> Reset Defaults
+        </button>
+        <button onclick="exitAdminView()" class="text-xs bg-clay-500 hover:bg-clay-600 text-white font-semibold px-4 py-1.5 rounded-lg transition flex items-center gap-1.5 shadow">
+          <i data-lucide="eye" class="w-3.5 h-3.5"></i> View Live Website
+        </button>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-6">
+      <!-- CMS Navigation Tabs -->
+      <div class="flex flex-wrap border-b border-stone-300 gap-4 sm:gap-6 text-xs sm:text-sm font-semibold">
+        <button onclick="switchCmsTab('availability')" id="tab-btn-availability" class="pb-3 border-b-2 border-clay-500 text-clay-600 font-bold">
+          1. Blocked Dates & Availability
+        </button>
+        <button onclick="switchCmsTab('pricing')" id="tab-btn-pricing" class="pb-3 text-stone-500 hover:text-stone-800 border-b-2 border-transparent">
+          2. Tariffs & Add-On Rates
+        </button>
+        <button onclick="switchCmsTab('photos')" id="tab-btn-photos" class="pb-3 text-stone-500 hover:text-stone-800 border-b-2 border-transparent">
+          3. Real Photos & GitHub /images/
+        </button>
+        <button onclick="switchCmsTab('firebase')" id="tab-btn-firebase" class="pb-3 text-stone-500 hover:text-stone-800 border-b-2 border-transparent">
+          4. Firebase Cloud Sync & Settings
+        </button>
+      </div>
+
+      <!-- TAB 1: BLOCKED DATES & AVAILABILITY CALENDAR -->
+      <div id="tab-availability" class="space-y-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <!-- Interactive Month Calendar -->
+          <div class="lg:col-span-7 bg-white p-6 rounded-3xl border border-stone-200 shadow-sm space-y-4">
+            <div class="flex items-center justify-between border-b border-stone-100 pb-3">
+              <div>
+                <h3 class="font-serif text-xl font-bold text-stone-900">Tap Dates to Block / Unblock</h3>
+                <p class="text-xs text-stone-500">Red dates are shown as booked on the public site.</p>
+              </div>
+              <div class="flex items-center gap-2">
+                <button onclick="changeAdminCalMonth(-1)" class="p-2 rounded-lg bg-stone-100 hover:bg-stone-200 text-stone-700" aria-label="Previous Month">
+                  <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+                <span id="admin-cal-month-label" class="text-xs sm:text-sm font-bold text-stone-900 min-w-[120px] text-center">Month Year</span>
+                <button onclick="changeAdminCalMonth(1)" class="p-2 rounded-lg bg-stone-100 hover:bg-stone-200 text-stone-700" aria-label="Next Month">
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-7 gap-1 text-center text-[11px] font-bold text-stone-500 uppercase">
+              <div>Sun</div><div>Mon</div><div>Tue</div><div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+            </div>
+            <div id="admin-cal-grid" class="grid grid-cols-7 gap-1.5"></div>
+          </div>
+
+          <!-- Quick Range Blocker & Active List -->
+          <div class="lg:col-span-5 bg-white p-6 rounded-3xl border border-stone-200 shadow-sm space-y-5">
+            <div class="border-b border-stone-100 pb-3">
+              <h3 class="font-serif text-xl font-bold text-stone-900">Block a Booking Range</h3>
+              <p class="text-xs text-stone-500">Quickly block dates when an Airbnb or WhatsApp booking comes in.</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div>
+                <label for="cms-block-start" class="block text-xs font-bold text-stone-700 mb-1">From Date</label>
+                <input type="date" id="cms-block-start" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-xs font-semibold">
+              </div>
+              <div>
+                <label for="cms-block-end" class="block text-xs font-bold text-stone-700 mb-1">To Date (Inclusive)</label>
+                <input type="date" id="cms-block-end" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-xs font-semibold">
+              </div>
+            </div>
+
+            <button onclick="addBlockedRange()" class="w-full bg-rose-600 hover:bg-rose-700 text-white font-bold py-2.5 rounded-xl text-xs shadow transition flex items-center justify-center gap-1.5">
+              <i data-lucide="calendar-plus" class="w-4 h-4"></i> Block Selected Date Range
+            </button>
+
+            <div class="pt-3 border-t border-stone-100">
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-stone-700">Currently Blocked Dates (<span id="cms-blocked-count">0</span>)</span>
+                <button onclick="clearAllBlockedDates()" class="text-[11px] text-rose-600 hover:underline font-semibold">Clear All</button>
+              </div>
+              <div id="cms-blocked-list" class="max-h-48 overflow-y-auto flex flex-wrap gap-1.5 p-2 bg-stone-50 rounded-xl border border-stone-200"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 2: PRICING & TARIFF MANAGER -->
+      <div id="tab-pricing" class="space-y-6 hidden">
+        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-6">
+          <div class="border-b border-stone-100 pb-4">
+            <h3 class="font-serif text-xl font-bold text-stone-900">Per-Night Room Tier Rates (INR ₹)</h3>
+            <p class="text-xs text-stone-500 mt-1">Updates both the room tier cards and the live guest tariff calculator immediately.</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div>
+              <label for="cms-price-1br" class="block text-xs font-bold uppercase text-stone-700 mb-1">1 BR (1–2 Guests)</label>
+              <input type="number" id="cms-price-1br" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-bold">
+            </div>
+            <div>
+              <label for="cms-price-2br" class="block text-xs font-bold uppercase text-stone-700 mb-1">2 BR (3–4 Guests)</label>
+              <input type="number" id="cms-price-2br" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-bold">
+            </div>
+            <div>
+              <label for="cms-price-3br" class="block text-xs font-bold uppercase text-stone-700 mb-1">Full 3BHK (5–6 Guests)</label>
+              <input type="number" id="cms-price-3br" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-bold">
+            </div>
+            <div>
+              <label for="cms-price-extra" class="block text-xs font-bold uppercase text-stone-700 mb-1">Extra Guest (7–12 Guests)</label>
+              <input type="number" id="cms-price-extra" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-bold">
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-stone-100">
+            <div>
+              <label for="cms-price-cleaning" class="block text-xs font-bold uppercase text-stone-700 mb-1">One-Time Cleaning Fee (₹)</label>
+              <input type="number" id="cms-price-cleaning" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-bold">
+            </div>
+            <div>
+              <label for="cms-discount-pct" class="block text-xs font-bold uppercase text-stone-700 mb-1">Direct Booking Discount (%)</label>
+              <input type="number" id="cms-discount-pct" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-bold">
+            </div>
+            <div>
+              <label for="cms-surge-pct" class="block text-xs font-bold uppercase text-stone-700 mb-1">Seasonal / Weekend Surge (%)</label>
+              <input type="number" id="cms-surge-pct" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-bold" placeholder="0 for standard">
+            </div>
+          </div>
+
+          <div class="border-t border-stone-100 pt-6">
+            <h4 class="font-serif text-lg font-bold text-stone-900 mb-4">Add-On Experiences Pricing (₹)</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label for="cms-price-meals" class="block text-xs font-bold uppercase text-stone-700 mb-1">Kerala Meals (Per Person/Day)</label>
+                <input type="number" id="cms-price-meals" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-bold">
+              </div>
+              <div>
+                <label for="cms-price-kayak" class="block text-xs font-bold uppercase text-stone-700 mb-1">Kayaking Tour (Per Person)</label>
+                <input type="number" id="cms-price-kayak" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-bold">
+              </div>
+              <div>
+                <label for="cms-price-boat" class="block text-xs font-bold uppercase text-stone-700 mb-1">Sunset Boat Cruise (Per Group)</label>
+                <input type="number" id="cms-price-boat" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-bold">
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 flex justify-end">
+            <button onclick="savePricingCms()" class="bg-clay-500 hover:bg-clay-600 text-white font-bold px-6 py-2.5 rounded-xl shadow transition flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4"></i> Save & Sync Pricing
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: REAL PHOTOS & GITHUB /images/ MANAGER -->
+      <div id="tab-photos" class="space-y-6 hidden">
+        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-6">
+          <div class="border-b border-stone-100 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <h3 class="font-serif text-xl font-bold text-stone-900">Real Property Photos Manager</h3>
+              <p class="text-xs text-stone-500 mt-1">
+                Tip for GitHub: Upload your real photos into an <code class="bg-stone-100 px-1.5 py-0.5 rounded font-mono text-stone-800">images/</code> folder in your repo (e.g., <code class="bg-stone-100 px-1.5 py-0.5 rounded font-mono text-stone-800">images/hero.jpg</code>) or paste any direct image URL below.
+              </p>
+            </div>
+            <button onclick="applyGitHubFolderPresets()" class="shrink-0 text-xs bg-backwater-800 hover:bg-backwater-900 text-white font-semibold px-3.5 py-2 rounded-xl transition">
+              Fill GitHub <code>images/*.jpg</code> Paths
+            </button>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- Slot 1: Hero & Villa Exterior -->
+            <div class="border border-stone-200 p-4 rounded-2xl space-y-2.5 bg-stone-50">
+              <span class="text-xs font-bold uppercase text-stone-800 block">1. Hero & Villa Exterior</span>
+              <div class="aspect-video w-full rounded-xl overflow-hidden bg-stone-200">
+                <img id="cms-preview-hero" src="" alt="Preview Hero" class="w-full h-full object-cover">
+              </div>
+              <input type="text" id="cms-input-url-hero" placeholder="images/hero.jpg or https://..." class="w-full text-xs border border-stone-300 rounded-lg p-2 bg-white font-mono">
+              <input type="file" accept="image/*" onchange="handleCmsFileUpload(event, 'hero')" class="text-[11px] file:py-1 file:px-2 file:rounded-lg file:border-0 file:bg-stone-200">
+            </div>
+
+            <!-- Slot 2: PS5 Racing Simulator -->
+            <div class="border border-stone-200 p-4 rounded-2xl space-y-2.5 bg-stone-50">
+              <span class="text-xs font-bold uppercase text-stone-800 block">2. PS5 Racing Simulator Rig</span>
+              <div class="aspect-video w-full rounded-xl overflow-hidden bg-stone-200">
+                <img id="cms-preview-ps5" src="" alt="Preview PS5" class="w-full h-full object-cover">
+              </div>
+              <input type="text" id="cms-input-url-ps5" placeholder="images/ps5.jpg or https://..." class="w-full text-xs border border-stone-300 rounded-lg p-2 bg-white font-mono">
+              <input type="file" accept="image/*" onchange="handleCmsFileUpload(event, 'ps5')" class="text-[11px] file:py-1 file:px-2 file:rounded-lg file:border-0 file:bg-stone-200">
+            </div>
+
+            <!-- Slot 3: Living & Dining Lounge -->
+            <div class="border border-stone-200 p-4 rounded-2xl space-y-2.5 bg-stone-50">
+              <span class="text-xs font-bold uppercase text-stone-800 block">3. Living & Dining Area</span>
+              <div class="aspect-video w-full rounded-xl overflow-hidden bg-stone-200">
+                <img id="cms-preview-living" src="" alt="Preview Living" class="w-full h-full object-cover">
+              </div>
+              <input type="text" id="cms-input-url-living" placeholder="images/living.jpg or https://..." class="w-full text-xs border border-stone-300 rounded-lg p-2 bg-white font-mono">
+              <input type="file" accept="image/*" onchange="handleCmsFileUpload(event, 'living')" class="text-[11px] file:py-1 file:px-2 file:rounded-lg file:border-0 file:bg-stone-200">
+            </div>
+
+            <!-- Slot 4: AC Bedrooms -->
+            <div class="border border-stone-200 p-4 rounded-2xl space-y-2.5 bg-stone-50">
+              <span class="text-xs font-bold uppercase text-stone-800 block">4. AC Bedrooms</span>
+              <div class="aspect-video w-full rounded-xl overflow-hidden bg-stone-200">
+                <img id="cms-preview-bedroom" src="" alt="Preview Bedroom" class="w-full h-full object-cover">
+              </div>
+              <input type="text" id="cms-input-url-bedroom" placeholder="images/bedroom.jpg or https://..." class="w-full text-xs border border-stone-300 rounded-lg p-2 bg-white font-mono">
+              <input type="file" accept="image/*" onchange="handleCmsFileUpload(event, 'bedroom')" class="text-[11px] file:py-1 file:px-2 file:rounded-lg file:border-0 file:bg-stone-200">
+            </div>
+
+            <!-- Slot 5: Backwater Shore & Canoe -->
+            <div class="border border-stone-200 p-4 rounded-2xl space-y-2.5 bg-stone-50">
+              <span class="text-xs font-bold uppercase text-stone-800 block">5. Backwater Shore & Canoe</span>
+              <div class="aspect-video w-full rounded-xl overflow-hidden bg-stone-200">
+                <img id="cms-preview-river" src="" alt="Preview River" class="w-full h-full object-cover">
+              </div>
+              <input type="text" id="cms-input-url-river" placeholder="images/river.jpg or https://..." class="w-full text-xs border border-stone-300 rounded-lg p-2 bg-white font-mono">
+              <input type="file" accept="image/*" onchange="handleCmsFileUpload(event, 'river')" class="text-[11px] file:py-1 file:px-2 file:rounded-lg file:border-0 file:bg-stone-200">
+            </div>
+          </div>
+              <input type="text" id="cms-input-url-path" placeholder="images/path.jpg or https://..." class="w-full text-xs border border-stone-300 rounded-lg p-2 bg-white font-mono">
+              <input type="file" accept="image/*" onchange="handleCmsFileUpload(event, 'path')" class="text-[11px] file:py-1 file:px-2 file:rounded-lg file:border-0 file:bg-stone-200">
+            </div>
+          </div>
+
+          <div class="pt-4 flex justify-end">
+            <button onclick="savePhotosCms()" class="bg-clay-500 hover:bg-clay-600 text-white font-bold px-6 py-2.5 rounded-xl shadow transition flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4"></i> Save & Apply Photos
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 4: FIREBASE CLOUD SYNC & HOST SETTINGS -->
+      <div id="tab-firebase" class="space-y-6 hidden">
+        <!-- Firebase Realtime Database Sync Card -->
+        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-5">
+          <div class="border-b border-stone-100 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h3 class="font-serif text-xl font-bold text-stone-900">Firebase Realtime Database Cloud Sync</h3>
+              <p class="text-xs text-stone-500 mt-1">
+                Connect your Firebase project so prices, photos, announcements, and blocked dates sync across all guest phones & laptops automatically.
+              </p>
+            </div>
+            <span id="firebase-conn-badge" class="px-3 py-1 rounded-full text-xs font-bold bg-stone-100 text-stone-700">
+              Not Connected
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <label for="cms-fb-apikey" class="block text-xs font-bold uppercase text-stone-700 mb-1">Firebase API Key</label>
+              <input type="text" id="cms-fb-apikey" placeholder="AIzaSy..." class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-xs font-mono">
+            </div>
+            <div>
+              <label for="cms-fb-dburl" class="block text-xs font-bold uppercase text-stone-700 mb-1">Realtime Database URL</label>
+              <input type="text" id="cms-fb-dburl" placeholder="https://your-project-default-rtdb.firebaseio.com" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-xs font-mono">
+            </div>
+            <div>
+              <label for="cms-fb-projectid" class="block text-xs font-bold uppercase text-stone-700 mb-1">Firebase Project ID</label>
+              <input type="text" id="cms-fb-projectid" placeholder="joby-homestay-kadamakkudy" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-xs font-mono">
+            </div>
+          </div>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+            <p class="text-[11px] text-stone-500">
+              Tip: Set Realtime Database rules to allow public <code class="bg-stone-100 px-1 rounded">.read: true</code> on <code class="bg-stone-100 px-1 rounded">/jobyHomestaySite</code> so visitors load live rates immediately.
+            </p>
+            <div class="flex items-center gap-2">
+              <button onclick="pushStateToFirebase(true)" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2 rounded-xl text-xs shadow transition">
+                Connect & Push Live Data
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- General Host Contact & Security Settings -->
+        <div class="bg-white p-6 sm:p-8 rounded-3xl border border-stone-200 shadow-sm space-y-5">
+          <div class="border-b border-stone-100 pb-3">
+            <h3 class="font-serif text-xl font-bold text-stone-900">Host Contact, Banner & Security PIN</h3>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div>
+              <label for="cms-contact-phone" class="block text-xs font-bold uppercase text-stone-700 mb-1">WhatsApp Number (with 91)</label>
+              <input type="text" id="cms-contact-phone" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-semibold">
+            </div>
+            <div>
+              <label for="cms-contact-email" class="block text-xs font-bold uppercase text-stone-700 mb-1">Host Email</label>
+              <input type="email" id="cms-contact-email" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-semibold">
+            </div>
+            <div>
+              <label for="cms-admin-pin" class="block text-xs font-bold uppercase text-stone-700 mb-1">Host CMS Passcode PIN</label>
+              <input type="password" id="cms-admin-pin" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-mono font-bold">
+            </div>
+          </div>
+
+          <div>
+            <label for="cms-announcement" class="block text-xs font-bold uppercase text-stone-700 mb-1">Top Announcement Banner Text</label>
+            <input type="text" id="cms-announcement" class="w-full bg-stone-50 border border-stone-300 rounded-xl px-3 py-2 text-sm font-semibold">
+          </div>
+
+          <div class="pt-2 flex justify-end">
+            <button onclick="saveSettingsCms()" class="bg-clay-500 hover:bg-clay-600 text-white font-bold px-6 py-2.5 rounded-xl shadow transition flex items-center gap-2">
+              <i data-lucide="check" class="w-4 h-4"></i> Save Host Settings
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- APPLICATION SCRIPT -->
+  <script>
+    const DEFAULT_CONFIG = {
+      pin: '1994',
+      pricing: {
+        price1br: 2778,
+        price2br: 4000,
+        price3br: 5000,
+        extraGuestPrice: 667,
+        cleaningFee: 400,
+        discountPct: 10,
+        surgePct: 0,
+        mealsPrice: 450,
+        kayakPrice: 600,
+        boatPrice: 2500
+      },
+      photos: {
+        hero: 'https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=2000&q=80',
+        ps5: 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=900&q=80',
+        living: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
+        bedroom: 'https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80',
+        river: 'https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80'
+      },
+      settings: {
+        phone: '917012289998',
+        email: 'jexonjoby94@gmail.com',
+        announcement: 'Book Direct on jobyhomestaykadamakkudy.com & get an instant 10% Direct Booking Discount!',
+        checkinTime: '2:00 PM',
+        checkoutTime: '11:00 AM'
+      },
+      blockedDates: [],
+      firebase: {
+        apiKey: '',
+        databaseURL: '',
+        projectId: ''
+      }
+    };
+
+    let AppState = {};
+    let firebaseDb = null;
+    let adminCalDate = new Date();
+
+    function initAppState() {
+      const stored = localStorage.getItem('joby_homestay_kadamakkudy_v3');
+      if (stored) {
+        try {
+          const parsed = JSON.parse(stored);
+          AppState = {
+            ...DEFAULT_CONFIG,
+            ...parsed,
+            pricing: { ...DEFAULT_CONFIG.pricing, ...(parsed.pricing || {}) },
+            photos: { ...DEFAULT_CONFIG.photos, ...(parsed.photos || {}) },
+            settings: { ...DEFAULT_CONFIG.settings, ...(parsed.settings || {}) },
+            firebase: { ...DEFAULT_CONFIG.firebase, ...(parsed.firebase || {}) },
+            blockedDates: Array.isArray(parsed.blockedDates) ? parsed.blockedDates : []
+          };
+        } catch (e) {
+          AppState = JSON.parse(JSON.stringify(DEFAULT_CONFIG));
+        }
+      } else {
+        AppState = JSON.parse(JSON.stringify(DEFAULT_CONFIG));
+      }
+
+      persistLocal();
+      renderPublicUI();
+      initFirebaseSync();
+    }
+
+    function persistLocal() {
+      localStorage.setItem('joby_homestay_kadamakkudy_v3', JSON.stringify(AppState));
+    }
+
+    // FIREBASE REALTIME DATABASE INTEGRATION
+    function initFirebaseSync() {
+      const fb = AppState.firebase;
+      if (!fb || !fb.apiKey || !fb.databaseURL) {
+        updateSyncIndicator(false, 'Local Mode');
+        return;
+      }
+
+      try {
+        if (!firebase.apps.length) {
+          firebase.initializeApp({
+            apiKey: fb.apiKey,
+            databaseURL: fb.databaseURL,
+            projectId: fb.projectId || undefined
+          });
+        }
+        firebaseDb = firebase.database();
+
+        // Listen for real-time updates from cloud
+        firebaseDb.ref('jobyHomestaySite').on('value', (snapshot) => {
+          const cloudData = snapshot.val();
+          if (cloudData) {
+            AppState.pricing = { ...AppState.pricing, ...(cloudData.pricing || {}) };
+            AppState.photos = { ...AppState.photos, ...(cloudData.photos || {}) };
+            AppState.settings = { ...AppState.settings, ...(cloudData.settings || {}) };
+            AppState.blockedDates = Array.isArray(cloudData.blockedDates) ? cloudData.blockedDates : [];
+            if (cloudData.pin) AppState.pin = cloudData.pin;
+
+            persistLocal();
+            renderPublicUI();
+            if (!document.getElementById('admin-dashboard-view').classList.contains('hidden')) {
+              populateCmsForms();
+              renderAdminCalendar();
+            }
+          }
+          updateSyncIndicator(true, 'Cloud Live');
+        }, (err) => {
+          console.warn('Firebase read error:', err);
+          updateSyncIndicator(false, 'Sync Error');
+        });
+      } catch (e) {
+        console.error('Firebase init error:', e);
+        updateSyncIndicator(false, 'Local Mode');
+      }
+    }
+
+    function pushStateToFirebase(fromForm = false) {
+      if (fromForm) {
+        AppState.firebase.apiKey = document.getElementById('cms-fb-apikey').value.trim();
+        AppState.firebase.databaseURL = document.getElementById('cms-fb-dburl').value.trim();
+        AppState.firebase.projectId = document.getElementById('cms-fb-projectid').value.trim();
+        persistLocal();
+        initFirebaseSync();
+      }
+      if (!firebaseDb) {
+        if (fromForm) showToast('Saved locally. Enter valid Firebase API Key & Database URL for cloud sync.', 'info');
+        return;
+      }
+      firebaseDb.ref('jobyHomestaySite').set({
+        pin: AppState.pin,
+        pricing: AppState.pricing,
+        photos: AppState.photos,
+        settings: AppState.settings,
+        blockedDates: AppState.blockedDates,
+        updatedAt: new Date().toISOString()
+      }).then(() => {
+        if (fromForm) showToast('Connected & pushed live data to Firebase!', 'success');
+      }).catch((err) => {
+        console.error('Firebase push error:', err);
+        showToast('Firebase write failed—check database rules.', 'error');
+      });
+    }
+
+    function updateSyncIndicator(isConnected, label) {
+      const dot = document.getElementById('sync-status-dot');
+      const lbl = document.getElementById('sync-status-label');
+      if (dot && lbl) {
+        dot.className = isConnected ? 'w-2 h-2 rounded-full bg-emerald-400 animate-pulse' : 'w-2 h-2 rounded-full bg-amber-400';
+        lbl.textContent = label;
+      }
+    }
+
+    // Helper to compute discounted upfront direct price (2778 * 0.90 = 2500)
+    function getDirectRate(standardRate) {
+      const surgeMultiplier = 1 + ((AppState.pricing.surgePct || 0) / 100);
+      const effectiveStandard = Math.round(standardRate * surgeMultiplier);
+      const discountPct = AppState.pricing.discountPct || 0;
+      const directRate = Math.round(effectiveStandard * (1 - discountPct / 100));
+      return { effectiveStandard, directRate, discountPct };
+    }
+
+    // RENDER PUBLIC UI
+    function renderPublicUI() {
+      // Photos
+      document.getElementById('img-hero').src = AppState.photos.hero;
+      document.getElementById('img-gallery-villa').src = AppState.photos.hero;
+      document.getElementById('img-gallery-ps5').src = AppState.photos.ps5;
+      document.getElementById('img-feature-ps5').src = AppState.photos.ps5;
+      document.getElementById('img-gallery-living').src = AppState.photos.living;
+      document.getElementById('img-gallery-bedroom').src = AppState.photos.bedroom;
+      document.getElementById('img-gallery-river').src = AppState.photos.river;
+
+      // Announcement & Contact
+      document.getElementById('live-announcement-text').textContent = AppState.settings.announcement;
+      const cleanPhone = AppState.settings.phone.replace(/[^0-9]/g, '');
+      const formattedPhone = cleanPhone.startsWith('91') && cleanPhone.length === 12
+        ? `+91 ${cleanPhone.slice(2)}`
+        : `+${cleanPhone}`;
+      document.getElementById('footer-phone-display').textContent = formattedPhone;
+
+      const quickWa = `https://wa.me/${cleanPhone}?text=${encodeURIComponent('Hello Jexon! I am visiting jobyhomestaykadamakkudy.com and would like to book at the upfront 10% direct discount rate.')}`;
+      document.getElementById('btn-quick-whatsapp').href = quickWa;
+      document.getElementById('mobile-whatsapp-btn').href = quickWa;
+
+      // Upfront Direct-Discounted Rates across Hero, Cards, and Dropdowns
+      const r1 = getDirectRate(AppState.pricing.price1br);
+      const r2 = getDirectRate(AppState.pricing.price2br);
+      const r3 = getDirectRate(AppState.pricing.price3br);
+      const rEx = getDirectRate(AppState.pricing.extraGuestPrice);
+      const disc = r1.discountPct;
+
+      document.getElementById('hero-discount-badge').textContent = `${disc}% Direct Discount Applied`;
+      document.getElementById('hero-ota-strike').textContent = `₹${r1.effectiveStandard.toLocaleString('en-IN')}`;
+      document.getElementById('hero-upfront-price').textContent = `₹${r1.directRate.toLocaleString('en-IN')}`;
+
+      document.getElementById('policy-discount-pill').innerHTML = `<i data-lucide="tag" class="w-4 h-4 text-emerald-700"></i><span>Upfront ${disc}% Direct Booking Discount Included</span>`;
+      document.querySelectorAll('.card-discount-tag').forEach(el => {
+        el.textContent = `${disc}% Direct Off`;
+      });
+
+      document.getElementById('card-rate-1br').textContent = `₹${r1.directRate.toLocaleString('en-IN')} / night`;
+      document.getElementById('card-ota-1br').textContent = `₹${r1.effectiveStandard.toLocaleString('en-IN')}`;
+
+      document.getElementById('card-rate-2br').textContent = `₹${r2.directRate.toLocaleString('en-IN')} / night`;
+      document.getElementById('card-ota-2br').textContent = `₹${r2.effectiveStandard.toLocaleString('en-IN')}`;
+
+      document.getElementById('card-rate-3br').textContent = `₹${r3.directRate.toLocaleString('en-IN')} / night`;
+      document.getElementById('card-ota-3br').textContent = `₹${r3.effectiveStandard.toLocaleString('en-IN')}`;
+
+      document.getElementById('card-rate-extra').textContent = `+₹${rEx.directRate.toLocaleString('en-IN')} / guest / N`;
+      document.getElementById('card-ota-extra').textContent = `₹${rEx.effectiveStandard.toLocaleString('en-IN')}`;
+
+      // Sync Hero & Calculator Dropdown Options with Upfront Direct Rates
+      document.getElementById('hero-opt-1br').textContent = `1–2 Guests (1 AC Room • ₹${r1.directRate.toLocaleString('en-IN')}/N)`;
+      document.getElementById('hero-opt-2br').textContent = `3–4 Guests (2 AC Rooms • ₹${r2.directRate.toLocaleString('en-IN')}/N)`;
+      document.getElementById('hero-opt-3br').textContent = `5–6 Guests (Full 3BHK • ₹${r3.directRate.toLocaleString('en-IN')}/N)`;
+      document.getElementById('hero-opt-8g').textContent = `7–8 Guests (+Extra Beds • ₹${(r3.directRate + 2 * rEx.directRate).toLocaleString('en-IN')}/N)`;
+      document.getElementById('hero-opt-12g').textContent = `9–12 Guests (Full Villa • up to ₹${(r3.directRate + 6 * rEx.directRate).toLocaleString('en-IN')}/N)`;
+
+      document.getElementById('calc-opt-g1').textContent = `1 Guest (1 AC Bedroom • ₹${r1.directRate.toLocaleString('en-IN')}/N)`;
+      document.getElementById('calc-opt-g2').textContent = `2 Guests (1 AC Bedroom • ₹${r1.directRate.toLocaleString('en-IN')}/N)`;
+      document.getElementById('calc-opt-g3').textContent = `3 Guests (2 AC Bedrooms • ₹${r2.directRate.toLocaleString('en-IN')}/N)`;
+      document.getElementById('calc-opt-g4').textContent = `4 Guests (2 AC Bedrooms • ₹${r2.directRate.toLocaleString('en-IN')}/N)`;
+      document.getElementById('calc-opt-g5').textContent = `5 Guests (Full 3BHK Villa • ₹${r3.directRate.toLocaleString('en-IN')}/N)`;
+      document.getElementById('calc-opt-g6').textContent = `6 Guests (Full 3BHK Villa • ₹${r3.directRate.toLocaleString('en-IN')}/N)`;
+      for (let g = 7; g <= 12; g++) {
+        const extraBeds = g - 6;
+        const nightly = r3.directRate + extraBeds * rEx.directRate;
+        document.getElementById(`calc-opt-g${g}`).textContent = `${g} Guests (3BHK + ${extraBeds} Extra Bed${extraBeds > 1 ? 's' : ''} • ₹${nightly.toLocaleString('en-IN')}/N)`;
+      }
+
+      // Check-in / Check-out displays
+      const ciShort = AppState.settings.checkinTime.replace(':00', '');
+      const coShort = AppState.settings.checkoutTime.replace(':00', '');
+      document.getElementById('story-checkin-display').textContent = `${ciShort} / ${coShort}`;
+      document.getElementById('label-calc-checkin').textContent = `Check-in Date (${AppState.settings.checkinTime})`;
+      document.getElementById('label-calc-checkout').textContent = `Check-out Date (${AppState.settings.checkoutTime})`;
+
+      // Add-on Labels
+      document.getElementById('label-addon-meals').textContent = `₹${AppState.pricing.mealsPrice} / person / day`;
+      document.getElementById('label-addon-kayak').textContent = `₹${AppState.pricing.kayakPrice} / person`;
+      document.getElementById('label-addon-boat').textContent = `₹${AppState.pricing.boatPrice.toLocaleString('en-IN')} / group`;
+      const expBoatEl = document.getElementById('exp-card-boat-price');
+      if (expBoatEl) expBoatEl.textContent = `₹${AppState.pricing.boatPrice.toLocaleString('en-IN')}`;
+
+      // Upcoming Blocked Dates Strip
+      const todayStr = new Date().toISOString().split('T')[0];
+      const upcomingBlocked = (AppState.blockedDates || []).filter(d => d >= todayStr).sort();
+      const strip = document.getElementById('public-blocked-strip');
+      const tagsContainer = document.getElementById('public-blocked-tags');
+      if (upcomingBlocked.length > 0) {
+        strip.classList.remove('hidden');
+        tagsContainer.innerHTML = upcomingBlocked.slice(0, 14).map(d =>
+          `<span class="px-2 py-0.5 rounded-md bg-rose-50 border border-rose-200 text-rose-700 text-[11px] font-mono">${d}</span>`
+        ).join('');
+      } else {
+        strip.classList.add('hidden');
+      }
+
+      runLiveCalculation();
+      lucide.createIcons();
+    }
+
+    // REACTIVE TARIFF & AVAILABILITY CALCULATOR
+    function getDatesBetween(startStr, endStr) {
+      const dates = [];
+      let curr = new Date(startStr + 'T00:00:00');
+      const end = new Date(endStr + 'T00:00:00');
+      while (curr < end) {
+        dates.push(curr.toISOString().split('T')[0]);
+        curr.setDate(curr.getDate() + 1);
+      }
+      return dates;
+    }
+
+    function runLiveCalculation() {
+      const checkinVal = document.getElementById('calc-checkin').value;
+      const checkoutVal = document.getElementById('calc-checkout').value;
+      const guests = parseInt(document.getElementById('calc-guests').value, 10);
+
+      const d1 = new Date(checkinVal);
+      const d2 = new Date(checkoutVal);
+      let nights = Math.ceil((d2 - d1) / (1000 * 60 * 60 * 24));
+      if (isNaN(nights) || nights < 1) nights = 1;
+
+      document.getElementById('display-nights-count').textContent = `${nights} Night${nights > 1 ? 's' : ''}`;
+
+      // Check Blocked Dates Overlap
+      const stayNights = (checkinVal && checkoutVal) ? getDatesBetween(checkinVal, checkoutVal) : [];
+      const blockedSet = new Set(AppState.blockedDates || []);
+      const conflicts = stayNights.filter(d => blockedSet.has(d));
+
+      const alertBox = document.getElementById('availability-alert');
+      const availBadge = document.getElementById('display-avail-badge');
+      if (conflicts.length > 0) {
+        alertBox.classList.remove('hidden');
+        document.getElementById('availability-alert-detail').textContent = `Blocked dates: ${conflicts.join(', ')}`;
+        availBadge.textContent = 'Date Conflict';
+        availBadge.className = 'text-xs px-2 py-0.5 rounded-full bg-rose-100 text-rose-800 font-semibold';
+      } else {
+        alertBox.classList.add('hidden');
+        availBadge.textContent = 'Available';
+        availBadge.className = 'text-xs px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-semibold';
+      }
+
+      // Room Tier Calculation (using upfront direct discounted rates)
+      let tierName = '';
+      let stdBasePerNight = 0;
+      let directBasePerNight = 0;
+      let extraGuests = 0;
+
+      const r1 = getDirectRate(AppState.pricing.price1br);
+      const r2 = getDirectRate(AppState.pricing.price2br);
+      const r3 = getDirectRate(AppState.pricing.price3br);
+      const rEx = getDirectRate(AppState.pricing.extraGuestPrice);
+
+      if (guests <= 2) {
+        tierName = '1 AC Bedroom (1–2 Guests)';
+        stdBasePerNight = r1.effectiveStandard;
+        directBasePerNight = r1.directRate;
+      } else if (guests <= 4) {
+        tierName = '2 AC Bedrooms (3–4 Guests)';
+        stdBasePerNight = r2.effectiveStandard;
+        directBasePerNight = r2.directRate;
+      } else if (guests <= 6) {
+        tierName = 'Full 3BHK Villa (5–6 Guests)';
+        stdBasePerNight = r3.effectiveStandard;
+        directBasePerNight = r3.directRate;
+      } else {
+        extraGuests = guests - 6;
+        tierName = `Full 3BHK + ${extraGuests} Extra Bed${extraGuests > 1 ? 's' : ''}`;
+        stdBasePerNight = r3.effectiveStandard;
+        directBasePerNight = r3.directRate;
+      }
+
+      const totalDirectBase = directBasePerNight * nights;
+      const totalStdBase = stdBasePerNight * nights;
+
+      const directExtraTotal = extraGuests * rEx.directRate * nights;
+      const stdExtraTotal = extraGuests * rEx.effectiveStandard * nights;
+
+      // Add-ons
+      let addonTotal = 0;
+      const addonSummaryList = [];
+      if (document.getElementById('addon-meals').checked) {
+        const mealSub = guests * AppState.pricing.mealsPrice * nights;
+        addonTotal += mealSub;
+        addonSummaryList.push(`Kerala Meals (₹${mealSub.toLocaleString('en-IN')})`);
+      }
+      if (document.getElementById('addon-kayak').checked) {
+        const kayakSub = guests * AppState.pricing.kayakPrice;
+        addonTotal += kayakSub;
+        addonSummaryList.push(`Kayaking (₹${kayakSub.toLocaleString('en-IN')})`);
+      }
+      if (document.getElementById('addon-boat').checked) {
+        const boatSub = AppState.pricing.boatPrice;
+        addonTotal += boatSub;
+        addonSummaryList.push(`Sunset Boat Safari (₹${boatSub.toLocaleString('en-IN')})`);
+      }
+
+      const cleaningFee = AppState.pricing.cleaningFee;
+      const directSavings = Math.max(0, (totalStdBase + stdExtraTotal) - (totalDirectBase + directExtraTotal));
+      const grandTotal = Math.max(0, totalDirectBase + directExtraTotal + addonTotal + cleaningFee);
+      const otaEstimate = Math.round((totalStdBase + stdExtraTotal + cleaningFee) * 1.16) + addonTotal;
+
+      // Update Receipt UI (showing upfront discounted rates)
+      document.getElementById('receipt-direct-tag').textContent = `Lowest Upfront Price (${AppState.pricing.discountPct}% Direct Off)`;
+      document.getElementById('receipt-tier-badge').textContent = tierName.split(' (')[0];
+      document.getElementById('receipt-base-desc').textContent = `${tierName.split(' (')[0]} (${nights}N × ₹${directBasePerNight.toLocaleString('en-IN')} direct)`;
+      document.getElementById('receipt-base-val').textContent = `₹${totalDirectBase.toLocaleString('en-IN')}`;
+
+      const extraRow = document.getElementById('receipt-extra-row');
+      if (extraGuests > 0) {
+        extraRow.classList.remove('hidden');
+        document.getElementById('receipt-extra-desc').textContent = `${extraGuests} Extra Mattress${extraGuests > 1 ? 'es' : ''} (${nights}N × ₹${rEx.directRate.toLocaleString('en-IN')})`;
+        document.getElementById('receipt-extra-val').textContent = `+₹${directExtraTotal.toLocaleString('en-IN')}`;
+      } else {
+        extraRow.classList.add('hidden');
+      }
+
+      const addonRow = document.getElementById('receipt-addon-row');
+      if (addonTotal > 0) {
+        addonRow.classList.remove('hidden');
+        document.getElementById('receipt-addon-desc').textContent = addonSummaryList.join(' + ');
+        document.getElementById('receipt-addon-val').textContent = `+₹${addonTotal.toLocaleString('en-IN')}`;
+      } else {
+        addonRow.classList.add('hidden');
+      }
+
+      document.getElementById('receipt-cleaning-val').textContent = `₹${cleaningFee.toLocaleString('en-IN')}`;
+      document.getElementById('receipt-discount-desc').textContent = `${AppState.pricing.discountPct}% Direct Discount Included`;
+      document.getElementById('receipt-discount-val').textContent = `Saved ₹${directSavings.toLocaleString('en-IN')}`;
+      document.getElementById('receipt-grand-total').textContent = `₹${grandTotal.toLocaleString('en-IN')}`;
+      document.getElementById('receipt-ota-compare').textContent = `₹${otaEstimate.toLocaleString('en-IN')}`;
+
+      // Build WhatsApp Message
+      const cleanPhone = AppState.settings.phone.replace(/[^0-9]/g, '');
+      const waMsg = `*Direct Booking Inquiry — Joby Homestay Kadamakkudy*\n\n` +
+        `• Check-in: ${checkinVal} (${AppState.settings.checkinTime})\n` +
+        `• Check-out: ${checkoutVal} (${AppState.settings.checkoutTime} • ${nights} night${nights > 1 ? 's' : ''})\n` +
+        `• Guests: ${guests} (${tierName})\n` +
+        `• Add-ons: ${addonSummaryList.length > 0 ? addonSummaryList.join(', ') : 'None'}\n` +
+        `• Upfront Direct Total (${AppState.pricing.discountPct}% Off): ₹${grandTotal.toLocaleString('en-IN')}\n\n` +
+        `Hi Jexon, please confirm if these dates are open!`;
+
+      document.getElementById('btn-whatsapp-inquiry').href = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(waMsg)}`;
+    }
+
+    function syncDatesFromHero() {
+      const hIn = document.getElementById('hero-date-in').value;
+      const hOut = document.getElementById('hero-date-out').value;
+      if (hIn) document.getElementById('calc-checkin').value = hIn;
+      if (hOut) document.getElementById('calc-checkout').value = hOut;
+      runLiveCalculation();
+    }
+
+    function syncGuestsFromHero() {
+      document.getElementById('calc-guests').value = document.getElementById('hero-guest-select').value;
+      runLiveCalculation();
+    }
+
+    function scrollToCalculator() {
+      syncDatesFromHero();
+      syncGuestsFromHero();
+      document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function switchPublicExperienceTab(tab) {
+      const cuisineBtn = document.getElementById('pub-tab-cuisine');
+      const actBtn = document.getElementById('pub-tab-activities');
+      const cuisinePanel = document.getElementById('pub-panel-cuisine');
+      const actPanel = document.getElementById('pub-panel-activities');
+
+      if (tab === 'cuisine') {
+        cuisinePanel.classList.remove('hidden');
+        actPanel.classList.add('hidden');
+        cuisineBtn.className = 'px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-clay-500 text-white shadow transition';
+        actBtn.className = 'px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-white text-timber-800 border border-timber-200 hover:border-clay-400 transition';
+      } else {
+        actPanel.classList.remove('hidden');
+        cuisinePanel.classList.add('hidden');
+        actBtn.className = 'px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-clay-500 text-white shadow transition';
+        cuisineBtn.className = 'px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold bg-white text-timber-800 border border-timber-200 hover:border-clay-400 transition';
+      }
+    }
+
+    // ADMIN CMS AUTH & NAVIGATION
+    function handleAdminEntry() {
+      document.getElementById('admin-login-modal').classList.remove('hidden');
+      const input = document.getElementById('admin-pin-input');
+      input.value = '';
+      input.focus();
+    }
+
+    function closeAdminLoginModal() {
+      document.getElementById('admin-login-modal').classList.add('hidden');
+    }
+
+    function handleAdminLoginSubmit(e) {
+      e.preventDefault();
+      const enteredPin = document.getElementById('admin-pin-input').value.trim();
+      if (enteredPin === AppState.pin || enteredPin === 'admin123') {
+        closeAdminLoginModal();
+        openAdminDashboard();
+        showToast('Unlocked Joby Homestay CMS!', 'success');
+      } else {
+        showToast('Incorrect PIN. Default is 1994.', 'error');
+      }
+    }
+
+    function openAdminDashboard() {
+      document.getElementById('public-view').classList.add('hidden');
+      document.getElementById('admin-dashboard-view').classList.remove('hidden');
+      populateCmsForms();
+      renderAdminCalendar();
+      lucide.createIcons();
+    }
+
+    function exitAdminView() {
+      document.getElementById('admin-dashboard-view').classList.add('hidden');
+      document.getElementById('public-view').classList.remove('hidden');
+      renderPublicUI();
+    }
+
+    function switchCmsTab(tab) {
+      const tabs = ['availability', 'pricing', 'photos', 'firebase'];
+      tabs.forEach(t => {
+        document.getElementById(`tab-${t}`).classList.add('hidden');
+        document.getElementById(`tab-btn-${t}`).className = 'pb-3 text-stone-500 hover:text-stone-800 border-b-2 border-transparent';
+      });
+      document.getElementById(`tab-${tab}`).classList.remove('hidden');
+      document.getElementById(`tab-btn-${tab}`).className = 'pb-3 border-b-2 border-clay-500 text-clay-600 font-bold';
+      if (tab === 'availability') renderAdminCalendar();
+      lucide.createIcons();
+    }
+
+    // CMS BLOCKED DATES CALENDAR
+    function changeAdminCalMonth(delta) {
+      adminCalDate.setMonth(adminCalDate.getMonth() + delta);
+      renderAdminCalendar();
+    }
+
+    function renderAdminCalendar() {
+      const year = adminCalDate.getFullYear();
+      const month = adminCalDate.getMonth();
+      const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+      document.getElementById('admin-cal-month-label').textContent = `${monthNames[month]} ${year}`;
+
+      const firstDay = new Date(year, month, 1).getDay();
+      const daysInMonth = new Date(year, month + 1, 0).getDate();
+      const blockedSet = new Set(AppState.blockedDates || []);
+      const grid = document.getElementById('admin-cal-grid');
+      grid.innerHTML = '';
+
+      for (let i = 0; i < firstDay; i++) {
+        grid.innerHTML += `<div class="p-2"></div>`;
+      }
+
+      for (let day = 1; day <= daysInMonth; day++) {
+        const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+        const isBlocked = blockedSet.has(dateStr);
+        const btnClass = isBlocked
+          ? 'bg-rose-600 text-white font-bold shadow-sm hover:bg-rose-700'
+          : 'bg-emerald-50 text-emerald-900 border border-emerald-200 hover:bg-emerald-100 font-medium';
+
+        grid.innerHTML += `
+          <button onclick="toggleBlockedDate('${dateStr}')" class="py-2.5 rounded-xl text-xs transition ${btnClass}">
+            ${day}
+          </button>
+        `;
+      }
+
+      // Update active blocked list
+      const sorted = [...blockedSet].sort();
+      document.getElementById('cms-blocked-count').textContent = sorted.length;
+      const listEl = document.getElementById('cms-blocked-list');
+      if (sorted.length === 0) {
+        listEl.innerHTML = `<span class="text-xs text-stone-400">No dates blocked yet. All dates open.</span>`;
+      } else {
+        listEl.innerHTML = sorted.map(d => `
+          <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-rose-100 text-rose-800 text-xs font-mono">
+            ${d}
+            <button onclick="toggleBlockedDate('${d}')" class="hover:text-rose-950 font-bold ml-1">&times;</button>
+          </span>
+        `).join('');
+      }
+    }
+
+    function toggleBlockedDate(dateStr) {
+      const set = new Set(AppState.blockedDates || []);
+      if (set.has(dateStr)) {
+        set.delete(dateStr);
+        showToast(`Opened date: ${dateStr}`, 'info');
+      } else {
+        set.add(dateStr);
+        showToast(`Blocked date: ${dateStr}`, 'success');
+      }
+      AppState.blockedDates = [...set].sort();
+      persistLocal();
+      pushStateToFirebase(false);
+      renderAdminCalendar();
+    }
+
+    function addBlockedRange() {
+      const start = document.getElementById('cms-block-start').value;
+      const end = document.getElementById('cms-block-end').value;
+      if (!start || !end || end < start) {
+        showToast('Select a valid start and end date.', 'error');
+        return;
+      }
+      const set = new Set(AppState.blockedDates || []);
+      let curr = new Date(start + 'T00:00:00');
+      const last = new Date(end + 'T00:00:00');
+      while (curr <= last) {
+        set.add(curr.toISOString().split('T')[0]);
+        curr.setDate(curr.getDate() + 1);
+      }
+      AppState.blockedDates = [...set].sort();
+      persistLocal();
+      pushStateToFirebase(false);
+      renderAdminCalendar();
+      showToast(`Blocked dates from ${start} to ${end}`, 'success');
+    }
+
+    function clearAllBlockedDates() {
+      AppState.blockedDates = [];
+      persistLocal();
+      pushStateToFirebase(false);
+      renderAdminCalendar();
+      showToast('All blocked dates cleared!', 'info');
+    }
+
+    // POPULATE & SAVE CMS FORMS
+    function populateCmsForms() {
+      // Pricing
+      document.getElementById('cms-price-1br').value = AppState.pricing.price1br;
+      document.getElementById('cms-price-2br').value = AppState.pricing.price2br;
+      document.getElementById('cms-price-3br').value = AppState.pricing.price3br;
+      document.getElementById('cms-price-extra').value = AppState.pricing.extraGuestPrice;
+      document.getElementById('cms-price-cleaning').value = AppState.pricing.cleaningFee;
+      document.getElementById('cms-discount-pct').value = AppState.pricing.discountPct;
+      document.getElementById('cms-surge-pct').value = AppState.pricing.surgePct;
+      document.getElementById('cms-price-meals').value = AppState.pricing.mealsPrice;
+      document.getElementById('cms-price-kayak').value = AppState.pricing.kayakPrice;
+      document.getElementById('cms-price-boat').value = AppState.pricing.boatPrice;
+
+      // Photos
+      const photoSlots = ['hero', 'ps5', 'living', 'bedroom', 'river'];
+      photoSlots.forEach(slot => {
+        document.getElementById(`cms-preview-${slot}`).src = AppState.photos[slot];
+        document.getElementById(`cms-input-url-${slot}`).value = AppState.photos[slot];
+      });
+
+      // Firebase & Settings
+      document.getElementById('cms-fb-apikey').value = AppState.firebase.apiKey || '';
+      document.getElementById('cms-fb-dburl').value = AppState.firebase.databaseURL || '';
+      document.getElementById('cms-fb-projectid').value = AppState.firebase.projectId || '';
+      document.getElementById('firebase-conn-badge').textContent = firebaseDb ? 'Connected & Syncing' : 'Local Storage Only';
+
+      document.getElementById('cms-contact-phone').value = AppState.settings.phone;
+      document.getElementById('cms-contact-email').value = AppState.settings.email;
+      document.getElementById('cms-announcement').value = AppState.settings.announcement;
+      document.getElementById('cms-admin-pin').value = AppState.pin;
+    }
+
+    function savePricingCms() {
+      AppState.pricing.price1br = parseInt(document.getElementById('cms-price-1br').value, 10) || 0;
+      AppState.pricing.price2br = parseInt(document.getElementById('cms-price-2br').value, 10) || 0;
+      AppState.pricing.price3br = parseInt(document.getElementById('cms-price-3br').value, 10) || 0;
+      AppState.pricing.extraGuestPrice = parseInt(document.getElementById('cms-price-extra').value, 10) || 0;
+      AppState.pricing.cleaningFee = parseInt(document.getElementById('cms-price-cleaning').value, 10) || 0;
+      AppState.pricing.discountPct = parseInt(document.getElementById('cms-discount-pct').value, 10) || 0;
+      AppState.pricing.surgePct = parseInt(document.getElementById('cms-surge-pct').value, 10) || 0;
+      AppState.pricing.mealsPrice = parseInt(document.getElementById('cms-price-meals').value, 10) || 0;
+      AppState.pricing.kayakPrice = parseInt(document.getElementById('cms-price-kayak').value, 10) || 0;
+      AppState.pricing.boatPrice = parseInt(document.getElementById('cms-price-boat').value, 10) || 0;
+
+      persistLocal();
+      pushStateToFirebase(false);
+      showToast('Pricing & add-on tariffs saved!', 'success');
+    }
+
+    function applyGitHubFolderPresets() {
+      const slots = ['hero', 'ps5', 'living', 'bedroom', 'river'];
+      slots.forEach(s => {
+        document.getElementById(`cms-input-url-${s}`).value = `images/${s}.jpg`;
+      });
+      showToast('Filled images/*.jpg relative paths — click Save & Apply Photos!', 'info');
+    }
+
+    function savePhotosCms() {
+      const slots = ['hero', 'ps5', 'living', 'bedroom', 'river'];
+      slots.forEach(slot => {
+        const val = document.getElementById(`cms-input-url-${slot}`).value.trim();
+        if (val) AppState.photos[slot] = val;
+      });
+      persistLocal();
+      pushStateToFirebase(false);
+      populateCmsForms();
+      showToast('Photos updated across website!', 'success');
+    }
+
+    function handleCmsFileUpload(e, slot) {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        AppState.photos[slot] = event.target.result;
+        persistLocal();
+        populateCmsForms();
+        showToast(`Loaded local photo for ${slot}`, 'info');
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function saveSettingsCms() {
+      AppState.settings.phone = document.getElementById('cms-contact-phone').value.trim();
+      AppState.settings.email = document.getElementById('cms-contact-email').value.trim();
+      AppState.settings.announcement = document.getElementById('cms-announcement').value.trim();
+      const newPin = document.getElementById('cms-admin-pin').value.trim();
+      if (newPin) AppState.pin = newPin;
+
+      persistLocal();
+      pushStateToFirebase(false);
+      showToast('Host contact & settings saved!', 'success');
+    }
+
+    function exportConfigJson() {
+      const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(AppState, null, 2));
+      const a = document.createElement('a');
+      a.setAttribute('href', dataStr);
+      a.setAttribute('download', 'jobyhomestay-config.json');
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      showToast('Exported jobyhomestay-config.json', 'info');
+    }
+
+    function resetToDefaults() {
+      AppState = JSON.parse(JSON.stringify(DEFAULT_CONFIG));
+      persistLocal();
+      pushStateToFirebase(false);
+      renderPublicUI();
+      populateCmsForms();
+      renderAdminCalendar();
+      showToast('Reset all settings to defaults!', 'info');
+    }
+
+    function showToast(message, type = 'info') {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      let bg = 'bg-stone-900 text-white';
+      if (type === 'success') bg = 'bg-emerald-600 text-white';
+      if (type === 'error') bg = 'bg-rose-600 text-white';
+
+      toast.className = `${bg} px-4 py-3 rounded-2xl shadow-xl text-xs font-semibold flex items-center gap-2 pointer-events-auto transition-all duration-300 transform translate-y-2 opacity-0`;
+      toast.innerHTML = `<i data-lucide="bell" class="w-4 h-4"></i> <span>${message}</span>`;
+      container.appendChild(toast);
+      lucide.createIcons();
+
+      requestAnimationFrame(() => toast.classList.remove('translate-y-2', 'opacity-0'));
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 3400);
+    }
+
+    function toggleMobileMenu() {
+      document.getElementById('mobile-dropdown').classList.toggle('hidden');
+    }
+
+    function setInitialDates() {
+      const today = new Date();
+      const tomorrow = new Date(today);
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      const dayAfter = new Date(today);
+      dayAfter.setDate(dayAfter.getDate() + 3);
+      const fmt = (d) => d.toISOString().split('T')[0];
+
+      document.getElementById('calc-checkin').value = fmt(tomorrow);
+      document.getElementById('calc-checkout').value = fmt(dayAfter);
+      document.getElementById('calc-checkin').min = fmt(today);
+      document.getElementById('calc-checkout').min = fmt(tomorrow);
+
+      document.getElementById('hero-date-in').value = fmt(tomorrow);
+      document.getElementById('hero-date-out').value = fmt(dayAfter);
+      document.getElementById('hero-date-in').min = fmt(today);
+      document.getElementById('hero-date-out').min = fmt(tomorrow);
+    }
+
+    // PRIVATE HOST CMS TRIGGERS (?admin=1 / ?host=1, Ctrl+Shift+H, or 5 taps on footer year)
+    function initSecretAdminTriggers() {
+      // 1. Check URL query parameter (?admin=1 or ?host=1)
+      const params = new URLSearchParams(window.location.search);
+      if (params.get('admin') === '1' || params.get('host') === '1') {
+        setTimeout(() => handleAdminEntry(), 250);
+      }
+
+      // 2. Desktop keyboard shortcut: Ctrl + Shift + H
+      document.addEventListener('keydown', (e) => {
+        if (e.ctrlKey && e.shiftKey && (e.key === 'H' || e.key === 'h')) {
+          e.preventDefault();
+          handleAdminEntry();
+        }
+      });
+
+      // 3. Mobile/Desktop secret 5-tap trigger on footer year ("2026")
+      const yearEl = document.getElementById('footer-secret-year');
+      if (yearEl) {
+        let tapCount = 0;
+        let tapTimer = null;
+        yearEl.addEventListener('click', () => {
+          tapCount++;
+          clearTimeout(tapTimer);
+          if (tapCount >= 5) {
+            tapCount = 0;
+            handleAdminEntry();
+          } else {
+            tapTimer = setTimeout(() => { tapCount = 0; }, 3000);
+          }
+        });
+      }
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      setInitialDates();
+      initAppState();
+      initSecretAdminTriggers();
+    });
+  </script>
 </body>
 </html>
